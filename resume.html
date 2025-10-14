@@ -1,263 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>Nathan Johnson - Resume</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta name="description" content="Nathan Johnson — Full-stack & Blockchain Engineer. 18+ years experience delivering scalable, secure, cloud-native and Web3 solutions." />
+  <meta name="keywords" content="Full-stack, Blockchain, React, Next.js, Node.js, AWS, Solidity, ERC-20, ERC-1155, MineralFi, Quetzal Collective" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:400,600,700" rel="stylesheet">
   <style>
-        body{
-            background-color: #0E578F;
-            margin: 0;
-            font-size: 1.2em;
-            color:#e9eff7;
-            font-family: 'Open Sans', sans-serif;
-        }
-        h1{
-            text-align: center;           
-            font-weight: bold;
-            text-transform: uppercase;            
-            margin-top: 60px;
-        }
-        h2{
-            color: #d0d0d0;
-            font-size: 1em;
-        }
-
-        .h1_main{
-            background-color: #DB952C;
-            display: block;
-            padding: 5px;
-            color: #efefef;
-        }
-
-        #dev1{
-            letter-spacing: 5px;
-            font-size: medium;
-            text-transform: uppercase;
-        }
-
-        #h1_nav{
-            font-size: 2em;
-        }      
-     
-        .center {
-            text-align: center;
-            vertical-align: middle;
-            margin: auto;        
-            width: 70%;            
-            padding: 20px;
-            height: auto;
-            background-color: #2c8fdb65;           
-        }
-       
-
-        #nav1 {           
-            width: 30%;
-            text-align: center;
-            float: left;
-            padding-top: 20px;
-        }
-        #main {           
-           width: 60%;       
-           background-color: #2c8fdb65;  
-           text-align: left;           
-           padding: 20px;
-           float: left;
-           border-left: solid 1px #74b5e1;
-           border-right: solid 1px #DB952C;
-           border-radius: 20px 20px 0 0;
-       }
-
-       .phone{
-        color: #ddf1ff;
-       }
-
-       article{
-        padding: 10px;
-       }
-
-       footer{
-        border-top: solid 1px #74b5e1;
-        clear:both;
-        padding-top: 15px;
-       }
-
-       a:link, a:visited{
-        color: white;
-       }
-
-    </style>
-
-    <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
+    :root{
+      --bg:#0E578F;
+      --panel:#2c8fdb65;
+      --accent:#DB952C;
+      --muted:#d0d0d0;
+      --line:#74b5e1;
+      --text:#e9eff7;
+    }
+    *{box-sizing:border-box}
+    body{
+      background-color:var(--bg);
+      margin:0;
+      font-size:16px;
+      color:var(--text);
+      font-family:'Open Sans',sans-serif;
+      line-height:1.5;
+    }
+    h1,h2{margin:0 0 .5rem 0}
+    h1{font-weight:800;text-transform:uppercase;margin-top:48px}
+    h2{color:var(--muted);font-size:1.05rem}
+    .h1_main{
+      background-color:var(--accent);
+      display:block;
+      padding:6px 10px;
+      color:#fff;
+      border-radius:6px;
+      letter-spacing:.5px;
+    }
+    #dev1{letter-spacing:4px;font-size:.9rem;text-transform:uppercase;display:block;margin-top:.25rem}
+    #h1_nav{font-size:2rem;line-height:1.1}
+    .center{
+      max-width:1100px;
+      margin:auto;
+      padding:16px;
+    }
+    .wrap{
+      display:flex;
+      gap:24px;
+      align-items:flex-start;
+    }
+    #nav1{
+      flex:0 0 280px;
+      text-align:center;
+      padding:16px;
+    }
+    #main{
+      flex:1 1 auto;
+      background:var(--panel);
+      padding:20px;
+      border-left:1px solid var(--line);
+      border-right:1px solid var(--accent);
+      border-radius:16px 16px 0 0;
+    }
+    img.hero{max-width:100%;height:auto;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+    address{font-style:normal;line-height:1.4}
+    .contact a{color:#fff;text-decoration:underline}
+    .chip{
+      display:inline-block;background:rgba(255,255,255,.12);padding:4px 8px;border-radius:999px;margin:2px 4px;font-size:.9rem
+    }
+    ul{margin:.25rem 0 .75rem 1.25rem}
+    li{margin:.25rem 0}
+    section{margin-bottom:20px}
+    .split-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 24px}
+    .role{margin-top:10px}
+    .meta{font-size:.9rem;color:#dfe9f7}
+    footer{border-top:1px solid var(--line);padding-top:12px;margin-top:24px}
+    @media (max-width:900px){
+      .wrap{flex-direction:column}
+      #nav1{flex:0 0 auto}
+      .split-2{grid-template-columns:1fr}
+    }
+  </style>
 </head>
-
 <body>
-
-    <div class="center">
-    <!-- <div class="centerInner"> -->
-        
-        <aside id="nav1">
-            <h1 id="h1_nav">Nathan<br>Johnson</h1>
-            <span id="dev1">SOFTWARE DEVELOPER</span>
-            <img src="assets/img/dyn1.png" width="375px"/>
-            <section>
-                
-            <hr>
-                <!-- <span class="phone">(406) 555-5555</span>              -->
-                
-                <address>
-                    ntjson@gmail.com<br>
-                    <a href="portfolio-formpro.html">Portfolio</a>                    
-                </address>
-                Missoula, MT<br>
-
-            
-            <hr>
-            </section>
-
-        </aside>
-
-
-        <main id="main">
-            <section>
-                <h1 class="h1_main">PROFILE</h1>
-                <p>Proficient in NextJS, React, Solidity, NoSQL (Firebase/Firestore), Ethereum, and Optimism ERC-1155, ERC-20, ERC-721 contracts using Hardhat and Remix. 
-                    Twenty years of experience in the healthcare and game development 
-                    industry and full stack development skills in web, client, gaming, and database systems.</p>
-            </section>
-
-            <section>
-                <h1 class="h1_main">QUALIFICATIONS</h1>    
-                <p>
-                    Proficient in Web3 systems and Uniswap V3 liquidity pool development.
-                    <br>Full stack development in database, presentation, and business logic.
-                    <br>Extensive experience in MVC, JavaScript, TypeScript, Dart, .NET, C#, PHP, LAMP, SQL, Web development, 
-                    Blockchain, Rich client development, Unity, Django, and Python.
-                    <br>Management, training, and mentoring experience.
-                </p>
-
-            </section>
-            <section>
-                <h1 class="h1_main">EXPERIENCE</h1>
-
-                <h2>SOFTWARE DEVELOPER, QUETZAL COLLECTIVE LLC</h2>
-                <pre><u><time>JANUARY 2020</time> -  Present</u></pre>
-
-                <p>
-                    Full Stack Software development using NextJS, React, Solidity, NoSQL (Firebase/Firestore), Ethereum virtual machine technologies, 
-                    Unity C# Android target platform, JavaScript, Python, Django, Unity DOTS (ECS), Solidity Web 3.0, 
-                    ThreeJS JavaScript framework, LAMP, AWS (Ubuntu, Lightsail, and ECS).<br>
-                    <br>
-                    <i>Responsibilities included:</i>
-                    <ul>
-                        <li>Developed web applications using NextJS and React.</li>
-                        <li>Implemented NoSQL databases using Firebase/Firestore.</li>
-                        <li>Worked on Ethereum and Optimism blockchain projects using Hardhat and Remix.</li>
-                        <li>Full stack development with Python, Django, SQLite, and PostgreSQL 
-                            for an OpenAI-driven website that aids creative writing and storyboarding.
-                        </li>
-                        <li>Successfully finished Android development (Unity C#) application assisting parents with child 
-                            needs using ScriptableObjects within an event-driven framework.</li>
-                        <li>Developed Polygon and Ethereum blockchain products with Solidity, 
-                            Remix, and ThreeJS for a treasure hunting NFT game.</li>                
-                    </ul>
-                </p>
-                <br>
-                
-                <h2>GAME DEVELOPER, NUMA RIDGE LLC</h2>
-                <pre><u><time>NOVEMBER 2018 </time>  -  <time> JANUARY 2020</time></u></pre>
-
-                <p>
-                    Game developer using full stack skills for the game Lostone, a virtual
-                    and real-world treasure hunting game developed by Numa Ridge LLC.<br>
-                    <br>
-                    <i>Responsibilities included:</i>
-                    <ul>
-                        <li>Unity game development, C# coding, SQL Server, and Amazon
-                            AWS integration (multi-player), web development (ASP.NET), Unity
-                            UI development, and 3D modeling via Blender.
-                        </li>                       
-                        <li>Worked closely with the CEO on planning, code development, team
-                            leadership projects, and game development specifications.</li>
-                        <li>Showcased game to Blackstone Launchpad for interest in
-                            investment, business, and entrepreneurship.</li>                
-                    </ul>
-                </p>
-
-            <br>
-            <h2>LEAD SOFTWARE DEVELOPER <br>ROCKY MOUNTAIN REHAB</h2>
-                <pre><u><time>JUNE 2006</time>  -  <time>NOVEMBER 2018</time></u></pre>                
-                <p>
-                Software developer for the development branch of a company that supplied IT solutions 
-                for state disability needs, independent living, and extended employment services for several Western states.<br>
-                <br>
-                <i>Responsibilities included:</i>
-                <ul>
-                    <li>
-                        Web development in Angular, PHP, C#, JavaScript, SQL.
-                        Database development in MySQL and SQL Server.
-                    </li>
-                    <li>ASP.NET MVC and DevExpress API (C#).</li>
-                    <li>
-                        Mentored and managed co-workers and sub-contractors using company software.
-                    </li>
-                </ul>               
-                </p>
-            
-            </section>
+  <div class="center">
+    <div class="wrap">
+      <aside id="nav1" aria-label="Sidebar">
+        <h1 id="h1_nav">Nathan<br/>Johnson</h1>
+        <span id="dev1">Software & Blockchain Engineer</span>
        
-            <section>
+        <section class="contact">
+          <hr/>
+          <address>
+            <div>(406) 239-1004</div>
+            <div><a href="mailto:ntjson@gmail.com">ntjson@gmail.com</a></div>
+            <div><a href="https://linkedin.com/in/ntjson" target="_blank" rel="noopener">LinkedIn</a></div>
+            ...
+            <div><a href="https://ntjson2.github.io" target="_blank" rel="noopener">Portfolio</a></div>
+            <div>Missoula, MT</div>
+          </address>
+          <hr/>
+          <div><a href="index.html">Home</a></div>
+        </section>
+      </aside>
 
-                <h1 class="h1_main">SKILLS</h1>
+      <main id="main" aria-label="Main content">
+        <!-- SUMMARY -->
+        <section>
+          <h1 class="h1_main">Summary</h1>
+          <p>
+            Full-stack/Blockchain engineer with 18+ years of experience shipping scalable, secure, cloud-native apps and Web3 systems.
+            Expert in React/Next.js, Node.js, AWS/Firebase, SQL/NoSQL, and Solidity (ERC-20/1155). Contractor-friendly leader who
+            owns discovery through CI/CD and delivery across fintech, SaaS, edtech, and geospatial analytics.
+          </p>
+        </section>
 
-                    <strong>Coding and Web development</strong> 
-                        <ul>
-                            <li>C#, Java, PHP, ASP.NET, <abbr title="Model View Controller">MVC</abbr>, Drupal, WordPress</li>
-                            <li> Blockchain technologies - Solidity, IPFS, Moralis, Remix, Web 3.0, ERC-1155 Multi-Token Standards</li>
-                            <li> JavaScript, Django, Python, React, TypeScript, AJAX, Angular, CSS, and HTML</li>
-                            <li> NextJS, React, Solidity, NoSQL (Firebase/Firestore), Ethereum, and Optimism with Hardhat and Remix</li>
-                        </ul>
+        <!-- SKILLS -->
+        <section>
+          <h1 class="h1_main">Skills & Technologies</h1>
+          <div class="split-2">
+            <div>
+              <strong>Languages</strong>
+              <ul>
+                <li>TypeScript, JavaScript, Python, C#, Solidity, PHP, Dart, SQL, Rust</li>
+              </ul>
+              <strong>Frameworks & Libraries</strong>
+              <ul>
+                <li>React, Next.js, Node.js, Angular, .NET Core, Unity, Unreal, Foundry</li>
+              </ul>
+              <strong>Databases</strong>
+              <ul>
+                <li>DynamoDB, Firestore, Firebase Realtime DB, MySQL, SQL Server</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Cloud & DevOps</strong>
+              <ul>
+                <li>AWS (Lambda, DynamoDB, S3, EC2), Firebase, Docker, GitHub Actions, Azure Pipelines, Serverless</li>
+              </ul>
+              <strong>Testing & Quality</strong>
+              <ul>
+                <li>Jest, Playwright, E2E Testing, SonarQube, Static Analysis</li>
+              </ul>
+              <strong>Blockchain & Web3</strong>
+              <ul>
+                <li>Ethereum, Polygon, Uniswap V3/V4, OpenZeppelin, ERC-20/1155, Contract Auditing</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-                    <strong>Database experience</strong> 
-                        <ul>
-                            <li>SQL Server, T-SQL, MongoDB</li>
-                            <li> MySQL, SQLite, JSON, XML</li>
-                        </ul>
+        <!-- EXPERIENCE -->
+        <section>
+          <h1 class="h1_main">Experience</h1>
 
+          <div class="role">
+            <h2>Lead Blockchain &amp; Cloud Engineer (Contract) — MineralFi</h2>
+            <div class="meta">Remote / On-Site • Jul 2023 – Present</div>
+            <ul>
+              <li>Deployed upgradeable ERC-20/1155 smart contracts (MINFI) with OpenZeppelin UUPS; supported 10K+ secure transactions.</li>
+              <li>Built NFT frameworks for Performance-Based Incentives (PBI) and Community Stakeholder Trusts (CST) with milestone rewards.</li>
+              <li>Implemented serverless analytics (Next.js + GraphQL + DynamoDB) for real-time dashboards and portfolio monitoring.</li>
+              <li>Integrated Uniswap V3 for automated liquidity/yield distribution; improved performance by ~30%.</li>
+              <li>Established CI/CD with GitHub Actions; reduced production issues by ~40%.</li>
+              <li>Partnered with frontend, legal, and tokenomics to align regulatory and technical requirements.</li>
+            </ul>
+          </div>
 
-                    <strong>Rich client/ standalone development</strong> 
-                        <ul>
-                            <li>Java, C#, DevExpress (ASP.NET)</li>
-                            <li> ASP.NET Core, MVC, Bootstrapping</li>
-                            <li> Unity and Unreal Engine</li>
-                        </ul>
+          <div class="role">
+            <h2>Full-Stack Developer (Contract) — Quetzal Collective LLC</h2>
+            <div class="meta">Missoula, MT • Jan 2020 – Jul 2023</div>
+            <ul>
+              <li>Launched collaborative storytelling platform (Next.js, Firebase, OpenAI API) with real-time content generation.</li>
+              <li>Built AWS Lambda + API Gateway with DynamoDB/S3 for highly available content storage.</li>
+              <li>Shipped Android app (Unity + FCM) for childcare coordination with real-time sync.</li>
+              <li>Added wallet-auth NFT minting and Polygon marketplace to a geo-treasure game.</li>
+            </ul>
+          </div>
 
-             </section>
-            <section>
+          <div class="role">
+            <h2>Game &amp; Systems Developer (Contract) — Numa Ridge LLC</h2>
+            <div class="meta">Remote • Nov 2018 – Jan 2020</div>
+            <ul>
+              <li>Designed multiplayer backend (Unity, Docker, AWS EC2) with secure asset sync and real-time communication.</li>
+              <li>Developed in-game token economy and inventory systems; delivered stable MVP with zero major incidents.</li>
+            </ul>
+          </div>
 
-                <h1 class="h1_main">CERTIFICATION AND TRAINING</h1>
-                <p>
-                    <ul>
-                        <li>Enrolled at University of Montana (Missoula) - Computer Science Bachelor's degree - Software Engineering, minor in Geology </li> 
-                        <li>Associates in Science - Programming and App Development - University of Montana, Missoula College</li>
-                        <li>AWS Academy Graduate - AWS Academy Cloud Foundations</li>
-                        <li> AutoCAD Certification</li>
-                    </ul>
-                </p>
+          <div class="role">
+            <h2>Lead Software Engineer — Rocky Mountain Rehab</h2>
+            <div class="meta">Missoula, MT • Jun 2006 – Nov 2018</div>
+            <ul>
+              <li>Led statewide case-management tools (Angular + .NET Core + MySQL) for disability & employment services.</li>
+              <li>Mentored 8-person team; introduced DevOps practices and increased delivery velocity by ~25%.</li>
+              <li>Migrated legacy systems to microservices with modern CI/CD.</li>
+            </ul>
+          </div>
+        </section>
 
+        <!-- EDUCATION -->
+        <section>
+          <h1 class="h1_main">Education</h1>
+          <ul>
+            <li><strong>B.S., Computer Science – Software Engineering</strong>, University of Montana — Expected Spring 2026</li>
+            <li><strong>A.A., Programming &amp; App Development</strong>, Missoula College</li>
+          </ul>
+        </section>
 
-            </section>
+        <!-- CERTIFICATIONS -->
+        <section>
+          <h1 class="h1_main">Certifications</h1>
+          <ul>
+            <li>AWS Academy Cloud Foundations — AWS Academy Graduate</li>
+            <li>Firebase Web Advanced — Google Developer Training</li>
+            <li>Solidity Smart Contract Security — In Progress</li>
+          </ul>
+        </section>
 
-           
-        </main>
-        <footer><small>2023 &copy; Nathan Johnson</small></footer>
-   <!--  </div> -->
-</div>
+        <!-- OPEN SOURCE / VOLUNTEERING -->
+        <section>
+          <h1 class="h1_main">Open Source, Speaking &amp; Volunteering</h1>
+          <ul>
+            <li>Open Source: Contributor to Layer 9 sleep-tracking research software</li>
+            <li>Mentorship: Trained junior developers in Unity and JavaScript systems</li>
+            <li>Volunteer: Lead engineer of mineral survey app (Firebase + React Native) for Montana field geologists</li>
+          </ul>
+        </section>
 
+        <footer><small>&copy; 2025 Nathan Johnson</small></footer>
+      </main>
+    </div>
+  </div>
 </body>
 </html>
