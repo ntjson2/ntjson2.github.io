@@ -16,8 +16,9 @@ SITE STRUCTURE
 ================================================================================
 
 ROOT LEVEL PAGES:
-  index.html                  - Home page with hero section, skills, portfolio overview
-  resume.html                 - Full resume with experience, education, certifications
+  index.html                  - Home page with hero section, skills, portfolio, and consulting services
+  resume.html                 - Full resume with experience, education, certifications, and consulting services
+  consulting.html             - Consulting services page: AI automation, system integration, machine commerce
   portfolio-*.html            - Individual project portfolio pages
 
 PORTFOLIO PROJECTS:
@@ -154,6 +155,13 @@ KEY FEATURES
    - JSON-LD for semantic understanding
    - Keyword optimization for discoverability
 
+6. CONSULTING SERVICES HIGHLIGHTED
+   - Dedicated consulting page with service offerings
+   - $188/hour rate clearly stated
+   - Options for hourly, project-based, and retainer work
+   - Emphasis on practical AI automation and machine commerce
+   - Prominent CTA from home page and resume
+
 ================================================================================
 UPDATING CONTENT
 ================================================================================
@@ -192,7 +200,45 @@ To deploy:
   3. GitHub Pages auto-deploys within minutes
 
 ================================================================================
-CONTACT & LINKS
+CONSULTING SERVICES
+================================================================================
+
+Available for independent consulting with adjustable rates.
+
+SERVICE OFFERINGS:
+  1. AI Workflow Automation
+     - Document automation, internal copilots, customer support AI
+     - RAG systems, AI agent integration, MCP
+     - Reduce 2+ hours/day of operational work
+
+  2. System Integration & Optimization
+     - API design, data pipelines, real-time monitoring
+     - Audit automation, database optimization
+     - Make disparate systems work together
+
+  3. Machine-Commerce Infrastructure
+     - x402 protocol integration, AI agent payment systems
+     - Stablecoin operations, micropayment APIs
+     - Autonomous settlement and AI-to-AI transactions
+
+  4. Blockchain Operations
+     - Provenance verification, immutable audit trails
+     - Tokenized access control, smart contracts
+     - Transparent, auditable systems
+
+ENGAGEMENT OPTIONS & RATES:
+  - Hourly Consulting: $200–$220/hour (minimum 5 hours/week)
+  - Project-Based: $220–$280/hour (4-12 weeks, scope-dependent)
+  - Retainer: $175–$200/hour (10-20 hrs/month, ongoing support)
+
+RATE PHILOSOPHY:
+  Short-term, high-complexity work commands premium rates ($220–$280/hr).
+  Long-term retainer relationships and ongoing partnerships are discounted ($175–$200/hr).
+  Standard hourly consulting sits in the middle ($200–$220/hr).
+
+Contact: ntjson@gmail.com | (406) 239-1004
+Location: Missoula, MT (Remote)
+
 ================================================================================
 
 Email:    ntjson@gmail.com

@@ -1,340 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Nathan Johnson - Full-Stack & AI-Enabled Blockchain Engineer | Resume</title>
-  <meta name="description" content="Nathan Johnson — Full-stack, blockchain, and AI agent engineer with 20+ years building scalable Web3 systems, DeFi protocols, and agent-based applications. Expertise: Solidity, React/Next.js, Node.js, AWS, OpenAI APIs, MineralFi, AssayChain." />
-  <meta name="keywords" content="Full-stack developer, Blockchain engineer, Web3, Solidity, React, Next.js, Node.js, AWS, Firebase, Python, AI agents, LLM integration, DeFi, smart contracts, ERC-20, ERC-1155, IPFS, mineral intelligence, AssayChain, MineralFi, tokenomics, geospatial, GIS" />
-  <meta name="author" content="Nathan Johnson">
-  <meta name="robots" content="index, follow">
-  
-  <!-- JSON-LD Structured Data for Google & AI Agents -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Nathan Johnson",
-    "jobTitle": "Full-Stack & AI-Enabled Blockchain Engineer",
-    "url": "https://ntjson2.github.io",
-    "sameAs": [
-      "https://linkedin.com/in/ntjson",
-      "https://github.com/ntjson2"
-    ],
-    "email": "ntjson@gmail.com",
-    "telephone": "(406) 239-1004",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Missoula",
-      "addressRegion": "MT",
-      "postalCode": "59801",
-      "addressCountry": "US"
-    },
-    "skills": [
-      "Solidity",
-      "Ethereum",
-      "Polygon",
-      "React",
-      "Next.js",
-      "Node.js",
-      "AWS",
-      "Python",
-      "TypeScript",
-      "Smart Contracts",
-      "Web3",
-      "DeFi",
-      "IPFS",
-      "AI Agents",
-      "LLM Integration",
-      "OpenAI API",
-      "ERC-20",
-      "ERC-1155",
-      "Tokenomics",
-      "GIS",
-      "Geospatial Systems"
-    ],
-    "knowsAbout": [
-      "Blockchain Development",
-      "Smart Contract Architecture",
-      "Web3 Systems",
-      "Full-Stack Development",
-      "Cloud Infrastructure (AWS, Firebase)",
-      "AI Agent Integration",
-      "DeFi Protocol Design",
-      "Mineral Data Intelligence",
-      "Geospatial Systems",
-      "Tokenomics & Economics Design"
-    ],
-    "workExperience": [
-      {
-        "@type": "WorkExperience",
-        "position": "Lead AI & Blockchain Engineer",
-        "company": "AssayChain",
-        "startDate": "2024-01",
-        "description": "Full-stack Web3 API for mineral intelligence with on-chain provenance verification, IPFS storage, and AI-agent-ready data APIs"
-      },
-      {
-        "@type": "WorkExperience",
-        "position": "Lead Blockchain & Cloud Engineer",
-        "company": "MineralFi",
-        "startDate": "2023-07",
-        "description": "Smart contract architecture, DeFi protocol design, AI-ready analytics infrastructure"
-      }
-    ]
-  }
-  </script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:400,600,700" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#0E578F;
-      --panel:#2c8fdb65;
-      --accent:#DB952C;
-      --muted:#d0d0d0;
-      --line:#74b5e1;
-      --text:#e9eff7;
-    }
-    *{box-sizing:border-box}
-    body{
-      background-color:var(--bg);
-      margin:0;
-      font-size:16px;
-      color:var(--text);
-      font-family:'Open Sans',sans-serif;
-      line-height:1.5;
-    }
-    h1,h2{margin:0 0 .5rem 0}
-    h1{font-weight:800;text-transform:uppercase;margin-top:48px}
-    h2{color:var(--muted);font-size:1.05rem}
-    .h1_main{
-      background-color:var(--accent);
-      display:block;
-      padding:6px 10px;
-      color:#fff;
-      border-radius:6px;
-      letter-spacing:.5px;
-    }
-    #dev1{letter-spacing:4px;font-size:.9rem;text-transform:uppercase;display:block;margin-top:.25rem}
-    #h1_nav{font-size:2rem;line-height:1.1}
-    .center{
-      max-width:1100px;
-      margin:auto;
-      padding:16px;
-    }
-    .wrap{
-      display:flex;
-      gap:24px;
-      align-items:flex-start;
-    }
-    #nav1{
-      flex:0 0 280px;
-      text-align:center;
-      padding:16px;
-    }
-    #main{
-      flex:1 1 auto;
-      background:var(--panel);
-      padding:20px;
-      border-left:1px solid var(--line);
-      border-right:1px solid var(--accent);
-      border-radius:16px 16px 0 0;
-    }
-    img.hero{max-width:100%;height:auto;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.25)}
-    address{font-style:normal;line-height:1.4}
-    .contact a{color:#fff;text-decoration:underline}
-    .chip{
-      display:inline-block;background:rgba(255,255,255,.12);padding:4px 8px;border-radius:999px;margin:2px 4px;font-size:.9rem
-    }
-    ul{margin:.25rem 0 .75rem 1.25rem}
-    li{margin:.25rem 0}
-    section{margin-bottom:20px}
-    .split-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 24px}
-    .role{margin-top:10px}
-    .meta{font-size:.9rem;color:#dfe9f7}
-    footer{border-top:1px solid var(--line);padding-top:12px;margin-top:24px}
-    @media (max-width:900px){
-      .wrap{flex-direction:column}
-      #nav1{flex:0 0 auto}
-      .split-2{grid-template-columns:1fr}
-    }
-  </style>
+  <title>Nathan Johnson - Resume | Operational AI & Blockchain Engineer</title>
+  <meta content="Nathan Johnson's professional resume: Full-stack engineer with 20+ years production experience, specializing in operational AI automation, Web3/blockchain systems, and machine-commerce infrastructure." name="description">
+  <meta content="Resume, CV, Full-stack developer, Blockchain engineer, Web3, Solidity, React, Node.js, AWS, Python, AI agents, TypeScript" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
+
 <body>
-  <div class="center">
-    <div class="wrap">
-      <aside id="nav1" aria-label="Sidebar">
-        <h1 id="h1_nav">Nathan<br/>Johnson</h1>
-        <span id="dev1">Full-Stack & AI-Enabled Blockchain Engineer</span>
-       
-        <section class="contact">
-          <hr/>
-          <address>
-            <div>(406) 239-1004</div>
-            <div><a href="mailto:ntjson@gmail.com">ntjson@gmail.com</a></div>
-            <div><a href="https://linkedin.com/in/ntjson" target="_blank" rel="noopener">LinkedIn</a></div>
-            <div><a href="https://github.com/ntjson2" target="_blank" rel="noopener">GitHub</a></div>
-            <div><a href="https://ntjson2.github.io" target="_blank" rel="noopener">Portfolio</a></div>
-            <div>Missoula, MT</div>
-          </address>
-          <hr/>
-          <div><a href="index.html">Home</a></div>
-        </section>
-      </aside>
 
-      <main id="main" aria-label="Main content">
-        <!-- SUMMARY -->
-        <section>
-          <h1 class="h1_main">Summary</h1>
-          <p>
-            Full-stack engineer with 20+ years shipping production code. I work across the stack—React, Node.js, Solidity smart contracts, and cloud infrastructure—and I'm equally comfortable 
-            building Web3 systems, DeFi protocols, and traditional SaaS applications. Recently spent two years deep in blockchain and mineral data systems: I built <strong>AssayChain</strong>, 
-            a Web3 API for mineral intelligence with on-chain provenance, and led the smart contracts and infrastructure for <strong>MineralFi</strong>, a geospatial DeFi platform. 
-            I like solving hard technical problems, shipping working systems, and mentoring junior engineers along the way.
-          </p>
-        </section>
-
-        <!-- SKILLS -->
-        <section>
-          <h1 class="h1_main">Skills & Technologies</h1>
-          <div class="split-2">
-            <div>
-              <strong>Languages</strong>
-              <ul>
-                <li>TypeScript, JavaScript, Python, Solidity, C#, Dart, Rust, PHP, SQL, Go</li>
-              </ul>
-              <strong>Frontend & UI</strong>
-              <ul>
-                <li>React, Next.js, React Native, Flutter, Tailwind CSS, Material-UI, Three.js</li>
-              </ul>
-              <strong>Backend & APIs</strong>
-              <ul>
-                <li>Node.js, Express, Python (Django, FastAPI), REST/GraphQL APIs, WebSockets</li>
-              </ul>
-              <strong>Databases & Storage</strong>
-              <ul>
-                <li>PostgreSQL, MySQL, MongoDB, DynamoDB, Firestore, Firebase Realtime DB, Redis</li>
-              </ul>
-            </div>
-            <div>
-              <strong>Cloud & DevOps</strong>
-              <ul>
-                <li>AWS (Lambda, EC2, RDS, DynamoDB, S3, API Gateway, CloudFront), Firebase, Docker, GitHub Actions, Azure Pipelines</li>
-              </ul>
-              <strong>AI &amp; Machine Learning</strong>
-              <ul>
-                <li>LLM APIs (OpenAI, Anthropic), AI agents, prompt engineering, RAG systems, semantic search, embeddings integration</li>
-              </ul>
-              <strong>Blockchain &amp; Web3</strong>
-              <ul>
-                <li>Solidity, Ethereum/Polygon, ERC-20/ERC-721/ERC-1155, OpenZeppelin, Hardhat, Foundry, Uniswap V3/V4, IPFS, EAS attestation</li>
-              </ul>
-              <strong>Testing &amp; Quality</strong>
-              <ul>
-                <li>Jest, Vitest, Playwright, E2E testing, contract auditing, SonarQube, static analysis, security reviews</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <!-- EXPERIENCE -->
-        <section>
-          <h1 class="h1_main">Professional Experience</h1>
-
-          <div class="role">
-            <h2>Lead AI &amp; Blockchain Engineer (Contract) — AssayChain</h2>
-            <div class="meta">Remote • Jan 2024 – Present</div>
-            <ul>
-              <li>Built a full-stack REST API for mineral commodity data and research. React frontend for visualizations, Node.js backend for USGS data aggregation, Solidity contracts for on-chain verification.</li>
-              <li>Wired up IPFS and EAS attestation so mineral data stays immutable and verifiable on-chain—critical for AI systems that need to trust data sources.</li>
-              <li>Deployed 14 API endpoints across Google Cloud Functions with three auth tiers, integrating real-time pricing and mine production data from USGS.</li>
-              <li>Engineered the data side of mineral processing: gravity separation, ultrasound cavitation, recovery rates—all structured so it's machine-readable for agents and LLMs.</li>
-              <li>Priced the API at $0.10/call so enterprises and AI systems can access verified commodity data programmatically without hitting rate limits.</li>
-              <li>Used Firestore for real-time state and audit logs, tied everything back to the Solidity contracts for end-to-end provenance tracking.</li>
-            </ul>
-          </div>
-
-          <div class="role">
-            <h2>Lead Blockchain &amp; Cloud Engineer (Contract) — MineralFi</h2>
-            <div class="meta">Remote / On-Site • Jul 2023 – Present</div>
-            <ul>
-              <li>Designed upgradeable ERC-20 and ERC-1155 smart contracts for the MINFI token using OpenZeppelin patterns—solid enough to handle 10K+ transactions without sweating.</li>
-              <li>Built NFT systems for Performance-Based Incentives and Community Stakeholder Trusts that actually pay out based on milestones, not just theoretical mechanics.</li>
-              <li>Set up a real-time analytics stack with Next.js, GraphQL, and DynamoDB so investors could watch their portfolio happen live.</li>
-              <li>Plugged Uniswap V3 into the system for automated liquidity and yield—ended up improving capital efficiency by about 30%.</li>
-              <li>Worked with the legal and tokenomics teams to make sure the contracts actually did what we said they'd do, compliance-wise and financially.</li>
-              <li>Set up CI/CD with GitHub Actions and proper contract testing (Hardhat). Reduced production issues from constant to rare.</li>
-            </ul>
-          </div>
-
-          <div class="role">
-            <h2>Full-Stack Developer (Contract) — Quetzal Collective LLC</h2>
-            <div class="meta">Missoula, MT • Jan 2020 – Jul 2023</div>
-            <ul>
-              <li>Built a storytelling app that used OpenAI to generate narratives in real-time—kind of wild that it actually worked and people wanted to use it.</li>
-              <li>Deployed serverless backend across Firebase and AWS, with smart caching so the thing didn't fall over during traffic spikes.</li>
-              <li>Shipped an Android app for childcare coordination that let families sync in real-time—less chaos for parents.</li>
-              <li>Added Web3 layer to a treasure hunting game: wallet auth, NFTs on Polygon, marketplace for trading finds.</li>
-              <li>Handled data pipelines, monitoring, and security for user-generated content—the boring stuff that prevents disasters.</li>
-            </ul>
-          </div>
-
-          <div class="role">
-            <h2>Game &amp; Systems Developer (Contract) — Numa Ridge LLC</h2>
-            <div class="meta">Remote • Nov 2018 – Jan 2020</div>
-            <ul>
-              <li>Architected multiplayer backend (Unity, Docker, AWS EC2) with secure asset sync, real-time communication, and scalable matchmaking.</li>
-              <li>Designed in-game token economy, inventory systems, and progression mechanics; delivered stable MVP with zero critical production incidents.</li>
-              <li>Integrated geolocation-based gameplay mechanics and treasure-hunting mechanics for location-aware mobile gaming.</li>
-            </ul>
-          </div>
-
-          <div class="role">
-            <h2>Lead Software Engineer — Rocky Mountain Rehab</h2>
-            <div class="meta">Missoula, MT • Jun 2006 – Nov 2018</div>
-            <ul>
-              <li>Led statewide case-management platform (Angular, .NET Core, MySQL) for disability services, employment counseling, and independent living coordination.</li>
-              <li>Mentored 8-person engineering team; introduced modern DevOps practices, automated testing, and CI/CD pipelines; increased delivery velocity ~25%.</li>
-              <li>Migrated legacy monolithic systems to microservices architecture; implemented API-first design and improved system resilience.</li>
-              <li>Managed database design, performance optimization, and security audits for HIPAA-compliant health data systems.</li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- EDUCATION -->
-        <section>
-          <h1 class="h1_main">Education</h1>
-          <ul>
-            <li><strong>B.S., Computer Science – Software Engineering</strong>, University of Montana — May 2026</li>
-            <li><strong>A.A., Programming &amp; Application Development</strong>, Missoula College</li>
-          </ul>
-        </section>
-
-        <!-- CERTIFICATIONS & TRAINING -->
-        <section>
-          <h1 class="h1_main">Certifications &amp; Professional Training</h1>
-          <ul>
-            <li>AWS Academy Cloud Foundations — AWS Academy Graduate</li>
-            <li>Firebase Web Advanced — Google Developer Training</li>
-            <li>Solidity Smart Contract Security — In Progress</li>
-            <li>Advanced OpenAI API Integration — Self-Directed Study</li>
-            <li>IPFS &amp; Distributed Systems Architecture — Self-Directed Study</li>
-          </ul>
-        </section>
-
-        <!-- OPEN SOURCE / VOLUNTEERING -->
-        <section>
-          <h1 class="h1_main">Open Source, Community &amp; Volunteer Work</h1>
-          <ul>
-            <li><strong>Open Source Contributor:</strong> Layer 9 sleep-tracking research software; geospatial data processing libraries</li>
-            <li><strong>Mentorship:</strong> Trained junior developers in Unity, JavaScript systems, Solidity, and modern DevOps practices</li>
-            <li><strong>Volunteer:</strong> Lead engineer of mineral survey application (Firebase + React Native) for Montana field geologists; integrated real-time GPS mapping and offline data sync</li>
-            <li><strong>Community:</strong> Active in Montana tech community; speaker on blockchain and Web3 systems</li>
-          </ul>
-        </section>
-
-        <footer><small>&copy; Copyright 2026 Nathan Johnson. All Rights Reserved.</small></footer>
-      </main>
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="fixed-top d-flex align-items-center topbar-inner-pages">
+    <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope-fill"></i><a href="mailto:ntjson@gmail.com">ntjson@gmail.com</a>
+        <a href="https://www.linkedin.com/in/ntjson" class="linkedin" style="padding-left:10px;"><i class="bx bxl-linkedin"></i></a>
+      </div>
     </div>
   </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Nathan Johnson <img src="assets/img/logo_001.png" alt="logo" /> </a></h1>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="consulting.html">Consulting</a></li>
+          <li><a class="nav-link scrollto active" href="resume.html">Resume</a></li>
+          <li class="dropdown"><a href="#"><span>Portfolio</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="portfolio-assaychain.html">AssayChain</a></li>
+              <li><a href="portfolio-mineralfi.html">MineralFi</a></li>
+              <li><a href="portfolio-formpro.html">FormPro</a></li>
+              <li><a href="portfolio-noidea_ai.html">noIdea.ai</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Resume</li>
+        </ol>
+        <h2>Resume</h2>
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Professional Summary</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <p>
+              Full-stack engineer and independent consultant with 20+ years shipping production code across Web3, SaaS, game development, and emerging AI systems. 
+              I solve expensive operational problems: AI workflow automation, system integration, and emerging machine-commerce infrastructure.
+            </p>
+            <p>
+              <strong>Core Expertise:</strong> Practical AI deployment (not theory), operational automation, emerging AI agents, blockchain-backed systems, and x402 machine-payment infrastructure. 
+              Recently architected <strong>AssayChain</strong> (Web3 mineral intelligence API with on-chain provenance) and <strong>MineralFi</strong> (DeFi platform for real-world asset tokenization). 
+              Full-stack capability: React/Next.js, Node.js/Python, Rust, Solidity smart contracts, Google Cloud/Firebase, IPFS.
+            </p>
+          </div>
+        </div>
+
+        <div class="section-title">
+          <h2>Professional Experience</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="resume-item">
+              <h4>Lead AI & Blockchain Engineer (Contract)</h4>
+              <h5>AssayChain • Jan 2024 – Present</h5>
+              <p><em>Remote</em></p>
+              <ul>
+                <li>Built a full-stack REST API for mineral commodity data and research. React frontend for visualizations, Node.js backend for USGS data aggregation, Solidity contracts for on-chain verification.</li>
+                <li>Wired up IPFS and EAS attestation so mineral data stays immutable and verifiable on-chain—critical for AI systems that need to trust data sources.</li>
+                <li>Deployed 14 API endpoints across Google Cloud Functions with three auth tiers, integrating real-time pricing and mine production data from USGS.</li>
+                <li>Engineered the data side of mineral processing: gravity separation, ultrasound cavitation, recovery rates—all structured so it's machine-readable for agents and LLMs.</li>
+                <li>Used Firestore for real-time state and audit logs, tied everything back to the Solidity contracts for end-to-end provenance tracking.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Lead Blockchain & Cloud Engineer (Contract)</h4>
+              <h5>MineralFi • Jul 2023 – Present</h5>
+              <p><em>Remote / On-Site</em></p>
+              <ul>
+                <li>Designed upgradeable ERC-20 and ERC-1155 smart contracts for the MINFI token using OpenZeppelin patterns—solid enough to handle 10K+ transactions without sweating.</li>
+                <li>Built NFT systems for Performance-Based Incentives and Community Stakeholder Trusts that actually pay out based on milestones.</li>
+                <li>Set up a real-time analytics stack with Next.js, GraphQL, and DynamoDB so investors could watch their portfolio happen live.</li>
+                <li>Plugged Uniswap V3 into the system for automated liquidity and yield—improved capital efficiency by about 30%.</li>
+                <li>Set up CI/CD with GitHub Actions and proper contract testing (Hardhat). Reduced production issues from constant to rare.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Full-Stack Developer (Contract)</h4>
+              <h5>Quetzal Collective LLC • Jan 2020 – Jul 2023</h5>
+              <p><em>Missoula, MT</em></p>
+              <ul>
+                <li>Built a storytelling app that used OpenAI to generate narratives in real-time—kind of wild that it actually worked and people wanted to use it.</li>
+                <li>Deployed serverless backend across Firebase and AWS, with smart caching so the thing didn't fall over during traffic spikes.</li>
+                <li>Shipped an Android app for childcare coordination that let families sync in real-time—less chaos for parents.</li>
+                <li>Added Web3 layer to a treasure hunting game: wallet auth, NFTs on Polygon, marketplace for trading finds.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Game & Systems Developer (Contract)</h4>
+              <h5>Numa Ridge LLC • Nov 2018 – Jan 2020</h5>
+              <p><em>Remote</em></p>
+              <ul>
+                <li>Architected multiplayer backend (Unity, Docker, AWS EC2) with secure asset sync, real-time communication, and scalable matchmaking.</li>
+                <li>Designed in-game token economy, inventory systems, and progression mechanics; delivered stable MVP with zero critical production incidents.</li>
+                <li>Integrated geolocation-based gameplay mechanics for location-aware mobile gaming.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Lead Software Engineer</h4>
+              <h5>Rocky Mountain Rehab • Jun 2006 – Nov 2018</h5>
+              <p><em>Missoula, MT</em></p>
+              <ul>
+                <li>Led statewide case-management platform (Angular, .NET Core, MySQL) for disability services, employment counseling, and independent living coordination.</li>
+                <li>Mentored 8-person engineering team; introduced modern DevOps practices, automated testing, and CI/CD pipelines; increased delivery velocity ~25%.</li>
+                <li>Migrated legacy monolithic systems to microservices architecture; implemented API-first design and improved system resilience.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-title">
+          <h2>Skills & Technologies</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="skills-list">
+              <strong>Languages & Frontend</strong>
+              <p>TypeScript, JavaScript, Python, Solidity, C#, Dart, Rust, PHP, SQL | React, Next.js, React Native, Flutter, Tailwind CSS, Three.js</p>
+              
+              <strong>Backend & Databases</strong>
+              <p>Node.js, Express, Django, FastAPI, REST/GraphQL APIs | PostgreSQL, MySQL, MongoDB, DynamoDB, Firestore, Firebase, Redis</p>
+              
+              <strong>Cloud & DevOps</strong>
+              <p>AWS (Lambda, EC2, RDS, S3, DynamoDB, API Gateway), Firebase, Google Cloud, Docker, GitHub Actions, CI/CD</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skills-list">
+              <strong>AI & Machine Learning</strong>
+              <p>LLM APIs (OpenAI, Anthropic), AI agents, prompt engineering, RAG systems, semantic search, MCP (Model Context Protocol), workflow automation</p>
+              
+              <strong>Blockchain & Web3</strong>
+              <p>Solidity, Ethereum/Polygon, ERC-20/721/1155, OpenZeppelin, Hardhat, Foundry, Uniswap, IPFS, EAS attestation, x402 protocol</p>
+              
+              <strong>Testing & Quality</strong>
+              <p>Jest, Vitest, Playwright, E2E testing, contract auditing, static analysis, security reviews</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-title">
+          <h2>Education</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="resume-item">
+              <h4>B.S., Computer Science – Software Engineering</h4>
+              <p><em>University of Montana — May 2026</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>A.A., Programming & Application Development</h4>
+              <p><em>Missoula College</em></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-title">
+          <h2>Certifications & Professional Training</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="certifications-list">
+              <li>AWS Academy Cloud Foundations — AWS Academy Graduate</li>
+              <li>Firebase Web Advanced — Google Developer Training</li>
+              <li>Solidity Smart Contract Security — In Progress</li>
+              <li>Advanced OpenAI API Integration — Self-Directed Study</li>
+              <li>IPFS & Distributed Systems Architecture — Self-Directed Study</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section-title">
+          <h2>Open Source & Community</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="community-list">
+              <li><strong>Open Source Contributor:</strong> Layer 9 sleep-tracking research software; geospatial data processing libraries</li>
+              <li><strong>Mentorship:</strong> Trained junior developers in Unity, JavaScript systems, Solidity, and modern DevOps practices</li>
+              <li><strong>Volunteer:</strong> Lead engineer of mineral survey application (Firebase + React Native) for Montana field geologists; integrated real-time GPS mapping and offline data sync</li>
+              <li><strong>Community:</strong> Active in Montana tech community; speaker on blockchain and Web3 systems</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright 2026 <strong><span>Nathan Johnson</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
