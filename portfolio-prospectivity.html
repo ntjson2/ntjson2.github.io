@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Mineral Prospectivity Model — Honest ML Evaluation | Nathan Johnson</title>
+  <meta content="A mineral prospectivity machine-learning model that predicts metal occurrence from geology, with honest leave-one-state-out spatial cross-validation and calibrated probabilities." name="description">
+  <meta content="Machine Learning, Prospectivity, scikit-learn, spatial cross-validation, probability calibration, mineral, ML model" name="keywords">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="topbar" class="fixed-top d-flex align-items-center topbar-inner-pages">
+    <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope-fill"></i><a href="mailto:ntjson@gmail.com">ntjson@gmail.com</a>
+        <a href="https://www.linkedin.com/in/ntjson" class="linkedin" style="padding-left:10px;"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/ntjson2" class="github" style="padding-left:10px;"><i class="bx bxl-github"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <header id="header" class="fixed-top d-flex align-items-center header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="index.html">Nathan Johnson</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="consulting.html">Consulting</a></li>
+          <li><a class="nav-link scrollto" href="resume.html">Resume</a></li>
+          <li class="dropdown"><a href="#"><span>Portfolio</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="portfolio-assaychain.html">AssayChain</a></li>
+              <li><a href="portfolio-mineflowtrack.html">MineFlowTrack</a></li>
+              <li><a href="portfolio-prospectivity.html">Prospectivity Model</a></li>
+              <li><a href="portfolio-mineralfi.html">MineralFi</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Portfolio</li>
+          <li>Prospectivity Model</li>
+        </ol>
+        <h2>Mineral Prospectivity Model</h2>
+      </div>
+    </section>
+
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Mineral Prospectivity Model</h3>
+              <ul>
+                <li><strong>Category</strong>: Machine Learning / Data Science</li>
+                <li><strong>Stack</strong>: Python, scikit-learn</li>
+                <li><strong>Task</strong>: Multi-label classification (5 metals)</li>
+                <li><strong>Evaluation</strong>: Leave-one-state-out spatial cross-validation</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <div class="portfolio-description">
+
+              <h2>The portfolio blurb</h2>
+              <p>
+                I designed, built, and honestly evaluated a <strong>mineral prospectivity model</strong> — a machine-learning system that predicts, for any point
+                on a map, which of five metals (gold, silver, copper, lead, zinc) are most likely to occur there, based on rock type, deposit type, and location.
+                Trained on 182 schema-locked, EAS-attested mining districts plus the USGS MRDS dataset, it uses strict leave-one-state-out spatial
+                cross-validation and calibrated probabilities. Rather than oversell it, I published exactly where it does and does not generalize —
+                the gold model predicts with F1 0.87 in-region, and I documented the honest out-of-region limits.
+              </p>
+
+              <h2>What it does (plain English)</h2>
+              <p>
+                Imagine you point to any spot on a map — say, somewhere in Nevada — and describe the rocks there (granite? volcanic? limestone?)
+                and whether it has been mined before. The model looks back at the mining districts it already knows and answers: "New spots that look
+                like this one, in this part of the country, with this kind of rock, usually turn out to have gold, sometimes silver and copper, rarely zinc."
+                It returns a score from 0 to 1 for each of five metals. It is pattern-matching, not magic.
+              </p>
+
+              <h2>The problem it solves</h2>
+              <p>
+                Junior miners and exploration consultancies face a screening question every day: "Where should we look next, and for what?"
+                That answer is usually someone's gut feel. A transparent, data-driven prioritization tool — one that also cites its supporting,
+                on-chain-attested reference districts — turns that gut feel into a repeatable, auditable first pass. It is a prioritization /
+                indicator, never a resource estimate.
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="details" class="about" style="padding-top:0;">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>What I built</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <table class="table table-bordered">
+              <thead class="thead-dark"><tr><th>Component</th><th>Detail</th></tr></thead>
+              <tbody>
+                <tr><td>Ground-truth data</td><td>182 curated, schema-locked, EAS-attested mining districts (US, CA/BC, MX)</td></tr>
+                <tr><td>Volume data</td><td>USGS MRDS (Mineral Resource Data System) — 267,964 deposit records used for augmentation</td></tr>
+                <tr><td>Task</td><td>Multi-label classification: predict presence of each of 5 metals per location</td></tr>
+                <tr><td>Model</td><td>One-vs-rest logistic regression, one model per metal</td></tr>
+                <tr><td>Features</td><td>state, deposit type, development status, host rock type, lat/lon (rounded ±0.1 deg)</td></tr>
+                <tr><td>Evaluation</td><td>Leave-one-state-out spatial cross-validation (honest standard for geology — no leakage)</td></tr>
+                <tr><td>Calibration</td><td>Sigmoid probability calibration, validated on a strict out-of-region hold-out (CO + CA)</td></tr>
+                <tr><td>Stack</td><td>Python / scikit-learn only (no new dependencies)</td></tr>
+              </tbody>
+            </table>
+
+            <p>
+              Why the methodology matters: in geology, a model that cheats by testing on neighbors of its training points looks great but is useless.
+              Leave-one-state-out CV forces the model to predict a state it has never seen, which is the real-world use case (new territory).
+              Reporting that honestly is the differentiator.
+            </p>
+          </div>
+        </div>
+
+        <div class="section-title" style="margin-top:2rem;">
+          <h2>Honest results</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p><em>In-region (districts-only leave-one-state-out):</em></p>
+            <table class="table table-bordered">
+              <thead class="thead-dark"><tr><th>Metal</th><th>Precision</th><th>Recall</th><th>F1</th></tr></thead>
+              <tbody>
+                <tr><td>Gold</td><td>0.80</td><td>0.97</td><td><strong>0.87</strong></td></tr>
+                <tr><td>Silver</td><td>0.68</td><td>0.72</td><td>0.70</td></tr>
+                <tr><td>Copper</td><td>0.71</td><td>0.54</td><td>0.61</td></tr>
+                <tr><td>Lead</td><td>0.56</td><td>0.44</td><td>0.49</td></tr>
+                <tr><td>Zinc</td><td>0.64</td><td>0.41</td><td>0.50</td></tr>
+              </tbody>
+            </table>
+            <p>
+              Documented limits: with generic (unknown) geology, even a famous gold district scores low — real geology features are required for a
+              meaningful output. Calibrated probabilities were validated on a strict out-of-region hold-out (Brier 0.29 / ECE 0.28).
+            </p>
+
+            <blockquote class="blockquote mt-4" style="border-left:4px solid #667eea; padding-left:1rem;">
+              <p class="mb-1"><strong>Indicator / prioritization tool — not a resource estimate.</strong></p>
+              <footer class="blockquote-footer" style="color:#888;">Method and limitations documented. Not NI 43-101 / JORC-compliant; not a deposit-finder.</footer>
+            </blockquote>
+
+            <p class="mt-3"><a href="resume.html" class="btn-learn-more">Back to Resume</a></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 footer-info">
+            <h3>Nathan Johnson</h3>
+            <p>Software Engineer building applied AI and data systems.</p>
+            <div class="social-links mt-3">
+              <a href="https://www.linkedin.com/in/ntjson" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://github.com/ntjson2" class="github"><i class="bx bxl-github"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Explore</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="resume.html">Resume</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="consulting.html">Consulting</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="portfolio-assaychain.html">AssayChain</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Contact</h4>
+            <p>
+              Missoula, MT 59801<br>
+              United States<br><br>
+              <strong>Email:</strong> ntjson@gmail.com<br>
+              <strong>LinkedIn:</strong> linkedin.com/in/ntjson
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>2026 Nathan Johnson</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

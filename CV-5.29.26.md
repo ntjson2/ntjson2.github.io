@@ -1,75 +1,90 @@
 # **Nathan Johnson**
 
-**Technical Advisor | Forward Deployed Engineer | Full-Stack Systems Architect**  
-Missoula, MT | [ntjson@gmail.com](mailto:ntjson@gmail.com) | [Portfolio Website](https://ntjson2.github.io/resume.html)
+**Software Engineer — Applied AI & Data Systems**
+Missoula, MT | [ntjson@gmail.com](mailto:ntjson@gmail.com) | [linkedin.com/in/ntjson](https://www.linkedin.com/in/ntjson/) | [Portfolio Website](https://ntjson2.github.io/resume.html)
 
 ### **Professional Summary**
 
-Pragmatic, delivery-focused technical advisor and full-stack engineer with over 20 years of experience shipping production-grade software across Web3, SaaS, and AI systems. Specializes in solving complex operational challenges, designing scalable system integrations, and acting as a bridge between technical execution and high-level business strategy. Proven track record of working closely with clients to deploy real-world AI agent workflows, blockchain-backed registries, and robust cloud infrastructure.
+Software engineer with a B.S. in Computer Science – Software Engineering (University of Montana, 2026) and 20+ years of experience shipping production-grade software. I build applied AI and data systems: AI document-extraction pipelines with calibrated quality scoring, multi-tenant field-data platforms, and rigorously-validated machine-learning models. I work as a bridge between technical execution and business goals, and I measure success by operational outcomes rather than technology for its own sake.
 
 ### **Core Expertise**
 
-* **Technical Advisory & Strategy:** Bridging engineering and business requirements, architectural design, client-facing systems integration, and system threat/risk analysis.  
-* **AI Integration & Automation:** Workflow automation, practical LLM API deployment, RAG systems, and Model Context Protocol (MCP) integrations.  
-* **Web3 & Decentralized Infrastructure:** Smart contract architecture (Solidity), RWA tokenization, on-chain provenance tracking, and decentralized data storage (IPFS/EAS).  
-* **Full-Stack & Cloud Architecture:** Next.js/React, Node.js/Python, Rust, AWS suite, Firebase, and robust CI/CD pipeline automation.
+* **Applied AI & Machine Learning:** Document extraction and normalization, quality-graded AI outputs, LLM API integration, RAG systems, MCP integrations, model evaluation and calibration (spatial cross-validation, out-of-domain validation).
+* **Full-Stack & Cloud Architecture:** React/Next.js, Node.js/Python, AWS and Google Cloud/Firebase, REST/GraphQL APIs, CI/CD automation.
+* **Data Engineering:** Data pipelines, schema design, provenance and audit trails, real-time state, multi-tenant data modeling.
+* **Web3 & Provenance (supporting capability):** Solidity, EAS attestation, IPFS, and x402 agent-payable infrastructure — applied where it adds real value.
+
+---
+
+### **Projects & Selected Work**
+
+#### **AssayChain — AI Document Extraction & Grading API** *(In Production)*
+
+* Built an AI pipeline that converts unstructured assay reports (PDF, image, CSV, text) into structured, quality-graded JSON using an A–D rubric (structural validity, coverage, self-consistency via a second extraction pass, physical-bounds cross-check).
+* Shipped an honest evaluation layer: 80% refund on Grade D, manual-review flag on Grade C, PII redaction, and ±0.1° coordinate rounding.
+* Exposed as a REST + MCP API for Claude, Cursor, VS Code, and the OpenAI Agents SDK; agent-payable via x402 (USDC on Base).
+
+#### **MineFlowTrack — Multi-tenant Geological Field-Data Platform** *(In Development)*
+
+* Designed a Firestore multi-tenant data model with Google/Apple auth and an admin review/approval workflow.
+* Built an IPFS + EAS attestation export pipeline for verified field-data runs and a sliding-scale profit-share + x402 revenue model integrated with AssayChain.
+
+#### **Mineral Prospectivity Model — Honest ML Evaluation**
+
+* Multi-label logistic regression (scikit-learn) predicting metal occurrence; leave-one-state-out spatial cross-validation; sigmoid calibration with documented out-of-region limits (gold F1 0.87 in-region).
 
 ---
 
 ### **Professional Experience**
 
-#### **Lead AI & Blockchain Engineer (Contract)**
+#### **Lead AI & Software Engineer (Contract)**
 
 **AssayChain** • Jan 2024 – Present | *Remote*
 
-* **Client Advisory:** Translated complex mineral commodity and geological research parameters into a machine-readable REST API structure suitable for AI agents and LLMs.  
-* **System Architecture:** Architected full-stack mineral intelligence platform featuring a React visualization frontend, Node.js backend for USGS data ingestion, and Solidity smart contracts for on-chain verification.  
-* **Deployment:** Configured and deployed 14 API endpoints across Google Cloud Functions with multi-tiered authentication, ensuring immutable provenance via IPFS and EAS attestations.
+* Built the AI extraction and grading pipeline that structures unstructured assay reports into graded JSON with an A–D quality rubric and self-consistency cross-checks.
+* Architected the full-stack platform: React frontend, Node.js backend for USGS data aggregation, Solidity contracts for on-chain verification, and a 14-endpoint API across Google Cloud Functions with multi-tier auth.
+* Wired IPFS and EAS attestation so mineral data is immutable and verifiable on-chain; structured mineral-processing data for machine-readable agent/LLM consumption.
 
 #### **Lead Blockchain & Cloud Engineer (Contract)**
 
-**MineralFi** • Jul 2023 – Present | *Remote / On-Site*
+**MineralFi** • Jul 2023 – Present | *Remote*
 
-* **Technical Consultation:** Advised stakeholders on capital-efficiency strategies, leading to a 30% improvement through the integration of Uniswap V3 automated liquidity pools.  
-* **Smart Contract Design:** Designed and implemented upgradeable ERC-20 and ERC-1155 smart contracts utilizing OpenZeppelin patterns to handle high-volume transactions securely.  
-* **Integration:** Engineered a real-time portfolio analytics stack combining Next.js, GraphQL, and DynamoDB, alongside Hardhat-based contract testing and GitHub Actions CI/CD pipelines.
-
-#### **Full-Stack Developer (Contract)**
-
-**Quetzal Collective LLC** • Jan 2020 – Jul 2023 | *Missoula, MT*
-
-* **Product Delivery:** Designed and launched an interactive storytelling application utilizing real-time OpenAI text-generation models.  
-* **Infrastructure Management:** Managed serverless backends across AWS and Firebase, integrating smart caching layers to support rapid user scaling and reduce operational overhead.  
-* **Cross-Functional Development:** Delivered an Android application for real-time childcare coordination and integrated Polygon-based Web3 features for a geolocation-based game.
-
-#### **Game & Systems Developer (Contract)**
-
-**Numa Ridge LLC** • Nov 2018 – Jan 2020 | *Remote*
-
-* **Systems Engineering:** Designed and deployed multiplayer backend architectures utilizing Unity, Docker, and AWS EC2 to handle secure asset synchronization and scalable matchmaking.  
-* **Economy Design:** Outlined and integrated in-game token economies, inventory systems, and progress tracking mechanics.
+* Designed upgradeable ERC-20 and ERC-1155 contracts (OpenZeppelin) for the MINFI token; built milestone-based NFT incentive systems.
+* Engineered a real-time analytics stack (Next.js, GraphQL, DynamoDB); integrated Uniswap V3 (~30% capital-efficiency improvement); established CI/CD with GitHub Actions and Hardhat testing.
 
 #### **Lead Software Engineer**
 
 **Rocky Mountain Rehab** • Jun 2006 – Nov 2018 | *Missoula, MT*
 
-* **Engineering Leadership:** Led and mentored an 8-person engineering team, increasing delivery velocity by approximately 25% through the implementation of automated testing and DevOps practices.  
-* **Modernization:** Managed the multi-year migration of legacy monolithic systems to an API-first microservices architecture (Angular, .NET Core, MySQL) for a statewide case-management platform.
+* Led a statewide case-management platform (Angular, .NET Core, MySQL); mentored an 8-person team and introduced DevOps practices, increasing delivery velocity ~25%.
+* Migrated legacy monolithic systems to an API-first microservices architecture.
+
+#### **Full-Stack Developer (Contract)**
+
+**Quetzal Collective LLC** • Jan 2020 – Jul 2023 | *Missoula, MT*
+
+* Built and deployed serverless backends across AWS and Firebase; integrated OpenAI models into production applications and added Web3 features to real products.
+
+#### **Game & Systems Developer (Contract)**
+
+**Numa Ridge LLC** • Nov 2018 – Jan 2020 | *Remote*
+
+* Architected a multiplayer backend (Unity, Docker, AWS EC2) with secure asset sync, real-time communication, and scalable matchmaking.
 
 ---
 
 ### **Skills & Technologies**
 
-* **Languages:** TypeScript, JavaScript, Python, Solidity, C\#, Rust, PHP, SQL, Dart  
-* **Frameworks & Libraries:** React, Next.js, React Native, Flutter, Node.js, Express, Django, FastAPI  
-* **Databases & Cloud:** AWS, GCP, Firebase, PostgreSQL, MySQL, MongoDB, DynamoDB, Firestore, Redis, Docker  
-* **Web3 & Advanced Tech:** LLM APIs, AI Agents, RAG systems, MCP, Hardhat, Foundry, EAS Attestation, IPFS
+* **AI, ML & Data:** Python (scikit-learn, pandas), LLM APIs (OpenAI, Anthropic), AI agents, prompt engineering, RAG, MCP, workflow automation, data extraction, model evaluation & calibration
+* **Languages & Frontend:** TypeScript, JavaScript, Python, Solidity, C#, Rust, SQL, Dart | React, Next.js, React Native, Flutter, Tailwind CSS
+* **Backend & Databases:** Node.js, Express, Django, FastAPI | PostgreSQL, MySQL, MongoDB, DynamoDB, Firestore, Firebase, Redis
+* **Cloud & DevOps:** AWS, GCP, Firebase, Docker, GitHub Actions, CI/CD
+* **Web3 & Provenance:** Solidity, ERC-20/721/1155, OpenZeppelin, Hardhat, Foundry, IPFS, EAS attestation, x402
 
 ---
 
 ### **Education & Certifications**
 
-* **B.S., Computer Science – Software Engineering** – University of Montana (May 2026\)  
-* **A.A., Programming & Application Development** – Missoula College  
+* **B.S., Computer Science – Software Engineering** – University of Montana (May 2026)
+* **A.A., Programming & Application Development** – Missoula College (2023)
 * **Certifications:** AWS Academy Cloud Foundations | Google Developer Training: Firebase Web Advanced
-

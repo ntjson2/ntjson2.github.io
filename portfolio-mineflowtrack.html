@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MineFlowTrack — Multi-tenant Geological Field-Data Platform | Nathan Johnson</title>
+  <meta content="MineFlowTrack: a multi-tenant geological field-data and sample-tracking platform. Firestore data model, admin review workflow, and IPFS + EAS attestation export pipeline." name="description">
+  <meta content="MineFlowTrack, field data, geological sampling, mineral processing, Firestore, EAS attestation, IPFS, multi-tenant platform" name="keywords">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="topbar" class="fixed-top d-flex align-items-center topbar-inner-pages">
+    <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope-fill"></i><a href="mailto:ntjson@gmail.com">ntjson@gmail.com</a>
+        <a href="https://www.linkedin.com/in/ntjson" class="linkedin" style="padding-left:10px;"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/ntjson2" class="github" style="padding-left:10px;"><i class="bx bxl-github"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <header id="header" class="fixed-top d-flex align-items-center header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="index.html">Nathan Johnson</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="consulting.html">Consulting</a></li>
+          <li><a class="nav-link scrollto" href="resume.html">Resume</a></li>
+          <li class="dropdown"><a href="#"><span>Portfolio</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="portfolio-assaychain.html">AssayChain</a></li>
+              <li><a href="portfolio-mineflowtrack.html">MineFlowTrack</a></li>
+              <li><a href="portfolio-prospectivity.html">Prospectivity Model</a></li>
+              <li><a href="portfolio-mineralfi.html">MineralFi</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Portfolio</li>
+          <li>MineFlowTrack</li>
+        </ol>
+        <h2>MineFlowTrack</h2>
+      </div>
+    </section>
+
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>MineFlowTrack</h3>
+              <ul>
+                <li><strong>Status</strong>: <span class="badge bg-warning text-dark">In Development</span></li>
+                <li><strong>Category</strong>: Multi-tenant Field-Data Platform</li>
+                <li><strong>Stack</strong>: Firebase/Firestore, Google &amp; Apple Auth, Cloud Functions, IPFS, EAS</li>
+                <li><strong>Role</strong>: Lead Software Engineer</li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>What it is</h2>
+              <p>
+                MineFlowTrack is a standalone, multi-tenant platform for logging geological samples and mineral-processing runs.
+                A company can use it to track its own field data, and with approval, export verified runs for on-chain attestation
+                and data sales through AssayChain.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <div class="portfolio-description">
+              <h2>What I built</h2>
+              <ul style="list-style:none; padding-left:0;">
+                <li><strong>Multi-tenant data model:</strong> Per-company Firestore collections (<code>company_profiles</code>, <code>run_entries</code>) so each operator's data stays isolated and permissioned via Firestore rules.</li>
+                <li><strong>Auth &amp; onboarding:</strong> Google/Apple sign-in with self-service registration and a structured company-setup workflow.</li>
+                <li><strong>Admin review workflow:</strong> A partner review queue for approving companies, resolving profit-share tiers, and linking executed agreements.</li>
+                <li><strong>Attestation export pipeline:</strong> Approved runs export to a v1 schema, pin to IPFS, and get an EAS attestation on Base — making field data verifiable end-to-end.</li>
+                <li><strong>Revenue model:</strong> A sliding-scale profit-share (by company revenue) split between the platform and its data partner, settled in USDC via x402.</li>
+              </ul>
+
+              <h3>Current status</h3>
+              <p>
+                MineFlowTrack is in active development. The multi-tenant platform, auth, company-setup flow, and attestation export
+                pipeline are working. The next focus is hardening the admin review screen and settlement flow ahead of a wider rollout.
+              </p>
+
+              <h3>How it connects to AssayChain</h3>
+              <p>
+                MineFlowTrack is the <em>source</em> platform and AssayChain is the marketplace + attestation partner. Approved companies
+                can export runs that AssayChain serves as attested data, with revenue shared back to the company and to MineFlowTrack.
+              </p>
+              <p><a href="portfolio-assaychain.html" class="btn-learn-more">See AssayChain (Production)</a></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 footer-info">
+            <h3>Nathan Johnson</h3>
+            <p>Software Engineer building applied AI and data systems.</p>
+            <div class="social-links mt-3">
+              <a href="https://www.linkedin.com/in/ntjson" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://github.com/ntjson2" class="github"><i class="bx bxl-github"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Explore</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="resume.html">Resume</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="consulting.html">Consulting</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="portfolio-assaychain.html">AssayChain</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Contact</h4>
+            <p>
+              Missoula, MT 59801<br>
+              United States<br><br>
+              <strong>Email:</strong> ntjson@gmail.com<br>
+              <strong>LinkedIn:</strong> linkedin.com/in/ntjson
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>2026 Nathan Johnson</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
