@@ -11,14 +11,14 @@ Software engineer with a B.S. in Computer Science – Software Engineering (Univ
 
 As founder of **Quetzal Collective LLC**, I build **AssayChain** — a production AI extraction and grading API with an append-only provenance layer — alongside **MineFlowTrack** (a multi-tenant geological field-data platform, in development). I also design and evaluate my own ML models using spatial cross-validation and probability calibration, and I document exactly where they do and don't generalize.
 
-I'm pragmatic about technology: measurable results over hype, production reliability over trend-chasing. Blockchain, provenance, and agent-payable APIs are tools I apply where they add real value — not the point in itself.
+I attempt to be pragmatic about technology: aiming for measurable results and production reliability. Blockchain, provenance, and agent-payable APIs are tools I apply where they add real value.
 
 ---
 
 ## Projects & Selected Work
 
 ### AssayChain — AI Document Extraction & Grading API (In Production)
-- Designed and shipped the production extraction and grading pipeline that turns unstructured assay documents (lab certificates, scanned reports, drill logs) into structured JSON with an honest A–D quality rubric — structural validity, coverage, self-consistency (a second independent extraction pass), and physical-bounds cross-checking.
+- Designed and shipped the production extraction and grading pipeline that turns unstructured assay documents (lab certificates, scanned reports, drill logs) into structured JSON with an honest A–D quality rubric — structural validity, coverage, self-consistency (a second independent extraction pass), and physical-bounds cross-checking. I recently submitted this project to NSF SBIR proposal for further development and evaluation.
 - Built the provenance layer — content-addressed storage plus an append-only attestation registry — so every extracted value is traceable to the source document it came from.
 - Shipped an honest evaluation layer: 80% refund on Grade D and a manual-review flag on Grade C, rather than a black-box output.
 - Built the benchmark harness that measures extraction accuracy with a confidence interval; validated on 57 USGS fire-assay samples and a 1937 state-survey fire-assay sheet.
@@ -48,7 +48,7 @@ I'm pragmatic about technology: measurable results over hype, production reliabi
 - Shipped a web API and an MCP server so both people and AI agents can call the pipeline.
 - Built the benchmark harness that measures extraction accuracy with a confidence interval; validated on 57 USGS fire-assay samples and a 1937 state-survey fire-assay sheet.
 - Architected the full-stack platform: React/Next.js frontend, Node.js backend for USGS data aggregation, PostgreSQL, Solidity contracts for on-chain verification, and a 14-endpoint API across Google Cloud Functions with multi-tier auth.
-- Wired IPFS and EAS attestation so mineral data is immutable and verifiable on-chain — critical for AI systems that need trustworthy data sources.
+- Wired up IPFS and EAS attestation so mineral data is immutable and verifiable on-chain. This is critical for AI systems that need trustworthy data sources.
 
 ### Lead Blockchain & Cloud Engineer (Contract)
 **MineralFi | Nov 2023 – Present | Remote**
