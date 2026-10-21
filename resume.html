@@ -85,17 +85,17 @@
           <div class="col-lg-12">
             <p>
               Software engineer with a <strong>B.S. in Computer Science – Software Engineering</strong> (University of Montana, 2026) and
-              <strong>20+ years shipping production software</strong>. I build AI systems that extract, structure, grade, and operationalize real data —
+              <strong>20+ years shipping production software (2001–present)</strong>. I build AI systems that extract, structure, grade, and operationalize real data —
               AI document-extraction APIs with calibrated quality scoring, multi-tenant field-data platforms, and honestly-evaluated machine-learning models.
             </p>
             <p>
-              Recent work includes <strong>AssayChain</strong> (a production AI extraction and grading API with on-chain provenance) and
-              <strong>MineFlowTrack</strong> (a multi-tenant geological field-data platform, in development). I also design and evaluate my own ML models
+              As founder of <strong>Quetzal Collective LLC</strong>, I build <strong>AssayChain</strong> (a production AI extraction and grading API with an
+              append-only provenance layer) alongside <strong>MineFlowTrack</strong> (a multi-tenant geological field-data platform, in development). I also design and evaluate my own ML models
               using spatial cross-validation and probability calibration, and I document exactly where they do and don't generalize.
             </p>
             <p>
-              I'm pragmatic about technology: measurable results over hype, production reliability over trend-chasing. Blockchain, provenance, and
-              agent-payable APIs are tools I apply where they add real value — not the point in itself.
+              I attempt to be pragmatic about technology: aiming for measurable results and production reliability. Blockchain, provenance, and
+              agent-payable APIs are tools I apply where they add real value.
             </p>
           </div>
         </div>
@@ -111,10 +111,13 @@
               <h4>AssayChain — AI Document Extraction &amp; Grading API</h4>
               <h5>In Production</h5>
               <ul>
-                <li>Built an AI pipeline that turns unstructured assay reports (PDF, image, CSV, text) into structured, quality-graded JSON using an A–D scoring rubric — structural validity, coverage, self-consistency (a second independent extraction pass), and physical-bounds cross-checking.</li>
+                <li>Designed and shipped the production extraction and grading pipeline that turns unstructured assay documents (lab certificates, scanned reports, drill logs) into structured JSON with an honest A–D quality rubric — structural validity, coverage, self-consistency (a second independent extraction pass), and physical-bounds cross-checking. I recently submitted this project to NSF SBIR proposal for further development and evaluation.</li>
+                <li>Built the provenance layer — content-addressed storage plus an append-only attestation registry — so every extracted value is traceable to the source document it came from.</li>
                 <li>Shipped an honest evaluation layer: 80% refund on Grade D and a manual-review flag on Grade C, rather than a black-box output.</li>
+                <li>Built the benchmark harness that measures extraction accuracy with a confidence interval; validated on 57 USGS fire-assay samples and a 1937 state-survey fire-assay sheet.</li>
                 <li>Added PII redaction and ±0.1° coordinate rounding so sensitive data never reaches a response.</li>
                 <li>Exposed as a REST + MCP API usable from Claude, Cursor, VS Code, and the OpenAI Agents SDK; agent-payable via x402 (USDC on Base).</li>
+                <li>Stack: Python, Node.js, React/Next.js, PostgreSQL, AWS, Google Cloud, IPFS, EAS attestation.</li>
               </ul>
             </div>
 
@@ -149,20 +152,22 @@
           <div class="col-lg-12">
 
             <div class="resume-item">
-              <h4>Lead AI &amp; Software Engineer (Contract)</h4>
-              <h5>AssayChain • Jan 2024 – Present</h5>
-              <p><em>Remote</em></p>
+              <h4>Founder &amp; Principal Engineer — Quetzal Collective LLC (AssayChain)</h4>
+              <h5>May 2026 – Present</h5>
+              <p><em>Missoula, MT</em></p>
               <ul>
-                <li>Built the AI extraction and grading pipeline that structures unstructured assay reports into graded JSON with an A–D quality rubric and self-consistency cross-checks.</li>
-                <li>Architected the full-stack platform: React frontend, Node.js backend for USGS data aggregation, Solidity contracts for on-chain verification, and a 14-endpoint API across Google Cloud Functions with multi-tier auth.</li>
-                <li>Wired IPFS and EAS attestation so mineral data is immutable and verifiable on-chain — critical for AI systems that need trustworthy data sources.</li>
-                <li>Structured mineral-processing data (gravity separation, ultrasound cavitation, recovery rates) so it's machine-readable for agents and LLMs.</li>
+                <li>Designed and shipped the production extraction and grading pipeline that turns unstructured assay documents (lab certificates, scanned reports, drill logs) into structured JSON with an honest A–D quality rubric.</li>
+                <li>Built the provenance layer — content-addressed storage plus an append-only attestation registry — so every extracted value is traceable to the source document it came from.</li>
+                <li>Shipped a web API and an MCP server so both people and AI agents can call the pipeline.</li>
+                <li>Built the benchmark harness that measures extraction accuracy with a confidence interval; validated on 57 USGS fire-assay samples and a 1937 state-survey fire-assay sheet.</li>
+                <li>Architected the full-stack platform: React/Next.js frontend, Node.js backend for USGS data aggregation, PostgreSQL, Solidity contracts for on-chain verification, and a 14-endpoint API across Google Cloud Functions with multi-tier authentication.</li>
+                <li>Wired up IPFS and EAS attestation so mineral data is immutable and verifiable on-chain. This is critical for AI systems that need trustworthy data sources.</li>
               </ul>
             </div>
 
             <div class="resume-item">
               <h4>Lead Blockchain &amp; Cloud Engineer (Contract)</h4>
-              <h5>MineralFi • Jul 2023 – Present</h5>
+              <h5>MineralFi • Nov 2023 – Present</h5>
               <p><em>Remote</em></p>
               <ul>
                 <li>Designed upgradeable ERC-20 and ERC-1155 contracts (OpenZeppelin) for the MINFI token, handling high-volume transactions.</li>
@@ -173,8 +178,30 @@
             </div>
 
             <div class="resume-item">
-              <h4>Lead Software Engineer</h4>
-              <h5>Rocky Mountain Rehab • Jun 2006 – Nov 2018</h5>
+              <h4>Independent Full-Stack Software Engineer</h4>
+              <h5>Self-employed • Oct 2018 – Present</h5>
+              <p><em>Missoula, MT</em></p>
+              <ul>
+                <li>Contract engineering across the stack — Rust, Solidity, React/Next.js, Python/Django, Unity (C#/DOTS), Three.js, LAMP, and AWS (Ubuntu, LightSail, ECS).</li>
+                <li>Delivered production web apps, blockchain systems, and real-time interactive systems for clients.</li>
+                <li>Recent focus: applied AI and data systems (see AssayChain / Quetzal Collective LLC above).</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>CTO &amp; Co-founder — Numa Ridge (Lostone)</h4>
+              <h5>Numa Ridge • May 2018 – Oct 2020</h5>
+              <p><em>Missoula, MT</em></p>
+              <ul>
+                <li>Co-founded and led engineering for Lostone, a real-world, multiplayer treasure-hunting game that tied a game economy to public-lands exploration.</li>
+                <li>Owned the full stack and the multiplayer networking architecture (Unity, Docker, AWS EC2) with secure asset sync, real-time communication, and scalable matchmaking.</li>
+                <li>Hit several hard real-time milestones. (Side venture pursued while contracting; wound down in 2020.)</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Lead Software Developer</h4>
+              <h5>Rocky Mountain Rehab • May 2006 – Nov 2018</h5>
               <p><em>Missoula, MT</em></p>
               <ul>
                 <li>Led a statewide case-management platform (Angular, .NET Core, MySQL) for disability services, employment counseling, and independent-living coordination.</li>
@@ -184,21 +211,20 @@
             </div>
 
             <div class="resume-item">
-              <h4>Full-Stack Developer (Contract)</h4>
-              <h5>Quetzal Collective LLC • Jan 2020 – Jul 2023</h5>
-              <p><em>Missoula, MT</em></p>
+              <h4>Software Developer</h4>
+              <h5>USIS • May 2004 – Sep 2005</h5>
+              <p><em>Greater Billings Area</em></p>
               <ul>
-                <li>Built and deployed serverless backends across AWS and Firebase with caching layers for scalable, cost-efficient traffic handling.</li>
-                <li>Integrated OpenAI models into production applications and added Web3 features (wallet auth, NFTs on Polygon, marketplace) to real products.</li>
+                <li>Full-stack software development delivering enterprise web applications.</li>
               </ul>
             </div>
 
             <div class="resume-item">
-              <h4>Game &amp; Systems Developer (Contract)</h4>
-              <h5>Numa Ridge LLC • Nov 2018 – Jan 2020</h5>
-              <p><em>Remote</em></p>
+              <h4>Web Developer</h4>
+              <h5>Versatile Productions Inc • Aug 2001 – Aug 2003</h5>
+              <p><em>Carbondale, CO</em></p>
               <ul>
-                <li>Architected a multiplayer backend (Unity, Docker, AWS EC2) with secure asset sync, real-time communication, and scalable matchmaking.</li>
+                <li>Built client-facing websites and web applications.</li>
               </ul>
             </div>
 
@@ -216,10 +242,10 @@
               <p>Python (scikit-learn, pandas), LLM APIs (OpenAI, Anthropic), AI agents, prompt engineering, RAG systems, semantic search, MCP, workflow automation, data extraction &amp; normalization, model evaluation &amp; calibration (spatial CV, OOD validation)</p>
 
               <strong>Languages &amp; Frontend</strong>
-              <p>TypeScript, JavaScript, Python, Solidity, C#, Dart, Rust, PHP, SQL | React, Next.js, React Native, Flutter, Tailwind CSS, Three.js</p>
+              <p>TypeScript, JavaScript, Python, Solidity, C#, Dart, Rust, PHP, SQL | React, Next.js, React Native, Flutter, Tailwind CSS, Three.js, Unity (C#/DOTS)</p>
 
               <strong>Cloud &amp; DevOps</strong>
-              <p>AWS (Lambda, EC2, RDS, S3, DynamoDB, API Gateway), Firebase, Google Cloud, Docker, GitHub Actions, CI/CD</p>
+              <p>AWS (Lambda, EC2, RDS, S3, DynamoDB, API Gateway, LightSail, ECS), Firebase, Google Cloud, Docker, GitHub Actions, CI/CD, LAMP</p>
             </div>
           </div>
           <div class="col-md-6">

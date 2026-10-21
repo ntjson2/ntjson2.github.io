@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Nathan Johnson — Resume</title>
+<style>
+  @page { size: letter; margin: 0.5in 0.6in 0.5in 0.6in; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 9.9pt;
+    line-height: 1.36;
+    color: #222;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  a { color: #1f4e79; text-decoration: none; }
+
+  header { border-bottom: 2.5px solid #1f4e79; padding-bottom: 7px; margin-bottom: 10px; }
+  h1 { font-size: 25pt; margin: 0; letter-spacing: -0.5px; line-height: 1.05; color: #111; }
+  .subtitle { font-size: 11.5pt; color: #1f4e79; font-weight: 600; margin-top: 2px; }
+  .contact { font-size: 8.6pt; color: #555; margin-top: 5px; }
+  .contact span { margin: 0 4px; }
+  .contact span:first-child { margin-left: 0; }
+
+  h2 {
+    font-size: 10.3pt; text-transform: uppercase; letter-spacing: 1.3px;
+    color: #1f4e79; border-bottom: 1.3px solid #b9c9d9;
+    padding-bottom: 2px; margin: 13px 0 7px;
+  }
+  p { margin: 0 0 5px; }
+
+  .skills p { margin: 0 0 3px; font-size: 9.4pt; }
+  .skills strong { color: #1f4e79; }
+
+  .job { margin-bottom: 8.5px; page-break-inside: avoid; }
+  .job-head { overflow: hidden; }
+  .job-head > div:first-child { float: left; max-width: 76%; }
+  .job-title { font-weight: 700; font-size: 10.3pt; color: #111; }
+  .job-org { color: #333; font-weight: 600; }
+  .job-meta { float: right; text-align: right; font-size: 8.7pt; color: #666; white-space: nowrap; }
+  .job-loc { font-size: 8.5pt; color: #777; font-style: italic; margin: 0 0 1px; }
+  ul { margin: 2px 0 0; padding-left: 15px; }
+  li { margin-bottom: 1.5px; }
+  .proj { margin-bottom: 7px; page-break-inside: avoid; }
+  .proj-title { font-weight: 700; color: #111; }
+  .proj-note { font-weight: 400; color: #777; font-size: 9pt; }
+  .edu-line { overflow: hidden; margin-bottom: 3px; }
+  .edu-line > strong { float: left; font-size: 10pt; }
+  .edu-meta { float: right; text-align: right; font-size: 8.7pt; color: #666; white-space: nowrap; }
+  .certs { font-size: 9.3pt; }
+  .tag { display: inline-block; font-size: 8pt; color: #1f4e79; border: 1px solid #b9c9d9;
+         border-radius: 3px; padding: 0 4px; margin-right: 4px; vertical-align: 1px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Nathan Johnson</h1>
+  <div class="subtitle">Software Engineer — Applied AI &amp; Data Systems</div>
+  <div class="contact">
+    <span>Missoula, MT</span><span>•</span>
+    <span>ntjson@gmail.com</span><span>•</span>
+    <span>linkedin.com/in/ntjson</span><span>•</span>
+    <span>github.com/ntjson2</span><span>•</span>
+    <span>ntjson2.github.io</span>
+  </div>
+</header>
+
+<h2>Professional Summary</h2>
+<p>
+  Software engineer with a <strong>B.S. in Computer Science – Software Engineering</strong> (University of Montana, 2026) and
+  <strong>20+ years shipping production software (2001–present)</strong>. I build applied AI and data systems — AI document-extraction
+  APIs with calibrated quality scoring, multi-tenant field-data platforms, and honestly-evaluated machine-learning models.
+  Pragmatic by default: measurable results over hype, production reliability over trend-chasing.
+</p>
+
+<h2>Core Skills</h2>
+<div class="skills">
+  <p><strong>AI, ML &amp; Data:</strong> Python (scikit-learn, pandas), LLM APIs (OpenAI, Anthropic), AI agents, prompt engineering, RAG, semantic search, MCP, data extraction &amp; normalization, model evaluation &amp; calibration (spatial CV, OOD validation)</p>
+  <p><strong>Languages:</strong> TypeScript, JavaScript, Python, Solidity, C#, Rust, SQL, Dart, PHP</p>
+  <p><strong>Frontend &amp; Interactive:</strong> React, Next.js, React Native, Flutter, Tailwind CSS, Three.js, Unity (C#/DOTS)</p>
+  <p><strong>Backend &amp; Databases:</strong> Node.js, Express, Django, FastAPI, REST/GraphQL | PostgreSQL, MySQL, MongoDB, DynamoDB, Firestore, Firebase, Redis</p>
+  <p><strong>Cloud &amp; DevOps:</strong> AWS (Lambda, EC2, RDS, S3, ECS, LightSail), Google Cloud, Firebase, Docker, GitHub Actions, CI/CD, LAMP</p>
+  <p><strong>Blockchain &amp; Provenance (supporting):</strong> Solidity, Ethereum/Polygon, ERC-20/721/1155, OpenZeppelin, Hardhat, Foundry, IPFS, EAS attestation, x402</p>
+</div>
+
+<h2>Professional Experience</h2>
+
+<div class="job">
+  <div class="job-head">
+    <div><span class="job-title">Founder &amp; Principal Engineer</span> — <span class="job-org">Quetzal Collective LLC (AssayChain)</span></div>
+    <div class="job-meta">May 2026 – Present</div>
+  </div>
+  <div class="job-loc">Missoula, MT</div>
+  <ul>
+    <li>Designed and shipped the production extraction and grading pipeline that turns unstructured assay documents (lab certificates, scanned reports, drill logs) into structured JSON with an honest A–D quality rubric.</li>
+    <li>Built the provenance layer — content-addressed storage plus an append-only attestation registry — so every extracted value is traceable to the source document it came from.</li>
+    <li>Shipped a web API and an MCP server so both people and AI agents can call the pipeline.</li>
+    <li>Built the benchmark harness that measures extraction accuracy with a confidence interval; validated on 57 USGS fire-assay samples and a 1937 state-survey fire-assay sheet.</li>
+    <li>Architected the full-stack platform: React/Next.js frontend, Node.js backend for USGS data aggregation, PostgreSQL, Solidity contracts for on-chain verification, and a 14-endpoint API across Google Cloud Functions with multi-tier auth.</li>
+    <li>Wired IPFS and EAS attestation so mineral data is immutable and verifiable on-chain.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div><span class="job-title">Lead Blockchain &amp; Cloud Engineer (Contract)</span> — <span class="job-org">MineralFi</span></div>
+    <div class="job-meta">Nov 2023 – Present</div>
+  </div>
+  <div class="job-loc">Remote</div>
+  <ul>
+    <li>Designed upgradeable ERC-20 and ERC-1155 contracts (OpenZeppelin) for the MINFI token, handling high-volume transactions.</li>
+    <li>Built NFT systems for performance-based incentives and stakeholder trusts with milestone-based payouts.</li>
+    <li>Engineered a real-time analytics stack (Next.js, GraphQL, DynamoDB) and integrated Uniswap V3 for automated liquidity (~30% capital-efficiency improvement).</li>
+    <li>Established CI/CD with GitHub Actions and Hardhat contract testing, substantially reducing production issues.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div><span class="job-title">Independent Full-Stack Software Engineer</span> — <span class="job-org">Self-employed</span></div>
+    <div class="job-meta">Oct 2018 – Present</div>
+  </div>
+  <div class="job-loc">Missoula, MT</div>
+  <ul>
+    <li>Contract engineering across the stack — Rust, Solidity, React/Next.js, Python/Django, Unity (C#/DOTS), Three.js, LAMP, and AWS (Ubuntu, LightSail, ECS).</li>
+    <li>Delivered production web apps, blockchain systems, and real-time interactive systems for clients; recent focus on applied AI and data systems.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div><span class="job-title">CTO &amp; Co-founder</span> — <span class="job-org">Numa Ridge (Lostone)</span></div>
+    <div class="job-meta">May 2018 – Oct 2020</div>
+  </div>
+  <div class="job-loc">Missoula, MT</div>
+  <ul>
+    <li>Co-founded and led engineering for Lostone, a real-world, multiplayer treasure-hunting game that tied a game economy to public-lands exploration.</li>
+    <li>Owned the full stack and the multiplayer networking architecture (Unity, Docker, AWS EC2) with secure asset sync, real-time communication, and scalable matchmaking; hit several hard real-time milestones.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div><span class="job-title">Lead Software Developer</span> — <span class="job-org">Rocky Mountain Rehab</span></div>
+    <div class="job-meta">May 2006 – Nov 2018</div>
+  </div>
+  <div class="job-loc">Missoula, MT</div>
+  <ul>
+    <li>Led a statewide case-management platform (Angular, .NET Core, MySQL) for disability services, employment counseling, and independent-living coordination.</li>
+    <li>Mentored an 8-person engineering team; introduced DevOps practices, automated testing, and CI/CD, increasing delivery velocity ~25%.</li>
+    <li>Migrated legacy monolithic systems to a microservices architecture with API-first design, improving resilience and maintainability.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div><span class="job-title">Software Developer</span> — <span class="job-org">USIS</span></div>
+    <div class="job-meta">May 2004 – Sep 2005</div>
+  </div>
+  <div class="job-loc">Greater Billings Area</div>
+  <ul>
+    <li>Full-stack software development delivering enterprise web applications.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div><span class="job-title">Web Developer</span> — <span class="job-org">Versatile Productions Inc</span></div>
+    <div class="job-meta">Aug 2001 – Aug 2003</div>
+  </div>
+  <div class="job-loc">Carbondale, CO</div>
+  <ul>
+    <li>Built client-facing websites and web applications.</li>
+  </ul>
+</div>
+
+<h2>Selected Projects</h2>
+
+<div class="proj">
+  <div><span class="proj-title">AssayChain — AI Document Extraction &amp; Grading API</span> <span class="proj-note">(In Production)</span></div>
+  <ul>
+    <li>Production pipeline plus provenance layer and benchmark harness; exposed as REST + MCP for Claude, Cursor, VS Code, and the OpenAI Agents SDK; agent-payable via x402 (USDC on Base).</li>
+    <li>Stack: Python, Node.js, React/Next.js, PostgreSQL, AWS, Google Cloud, IPFS, EAS attestation.</li>
+  </ul>
+</div>
+
+<div class="proj">
+  <div><span class="proj-title">MineFlowTrack — Multi-tenant Geological Field-Data Platform</span> <span class="proj-note">(In Development)</span></div>
+  <ul>
+    <li>Firestore multi-tenant data model with Google/Apple auth and an admin review/approval workflow; IPFS + EAS attestation export pipeline for verified field-data runs.</li>
+  </ul>
+</div>
+
+<div class="proj">
+  <div><span class="proj-title">Mineral Prospectivity Model — Honest ML Evaluation</span></div>
+  <ul>
+    <li>Multi-label logistic regression (scikit-learn) predicting metal occurrence; leave-one-state-out spatial cross-validation and sigmoid calibration with documented out-of-region limits (gold F1 0.87 in-region).</li>
+  </ul>
+</div>
+
+<h2>Education</h2>
+<div class="edu-line">
+  <strong>B.S., Computer Science – Software Engineering</strong>
+  <span class="edu-meta">University of Montana — May 2026</span>
+</div>
+<div class="edu-line">
+  <strong>A.A., Programming &amp; Application Development</strong>
+  <span class="edu-meta">Missoula College — 2023</span>
+</div>
+
+<h2>Certifications &amp; Professional Training</h2>
+<div class="certs">
+  AWS Academy Cloud Foundations (AWS Academy Graduate) &nbsp;•&nbsp;
+  Firebase Web Advanced (Google Developer Training) &nbsp;•&nbsp;
+  Advanced OpenAI API Integration &nbsp;•&nbsp;
+  IPFS &amp; Distributed Systems Architecture
+</div>
+
+</body>
+</html>
