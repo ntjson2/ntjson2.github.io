@@ -7,7 +7,7 @@
 
 ## Professional Summary
 
-Software engineer with a B.S. in Computer Science – Software Engineering (University of Montana, 2026) and 20+ years shipping production software (2001–present). I build AI systems that extract, structure, grade, and operationalize real data — AI document-extraction APIs with calibrated quality scoring, multi-tenant field-data platforms, and honestly-evaluated machine-learning models.
+Software engineer with over 20 years shipping production software. I build AI systems that extract, structure, grade, and operationalize real data — AI document-extraction APIs with calibrated quality scoring, multi-tenant field-data platforms, and honestly-evaluated machine-learning models.
 
 As founder of **Quetzal Collective LLC**, I build **AssayChain** — a production AI extraction and grading API with an append-only provenance layer — alongside **MineFlowTrack** (a multi-tenant geological field-data platform, in development). I also design and evaluate my own ML models using spatial cross-validation and probability calibration, and I document exactly where they do and don't generalize.
 
@@ -79,22 +79,12 @@ I attempt to be pragmatic about technology: aiming for measurable results and pr
 - Mentored an 8-person engineering team; introduced DevOps practices, automated testing, and CI/CD, increasing delivery velocity ~25%.
 - Migrated legacy monolithic systems to a microservices architecture with API-first design, improving resilience and maintainability.
 
-### Software Developer
-**USIS | May 2004 – Sep 2005 | Greater Billings Area**
-
-- Full-stack software development delivering enterprise web applications.
-
-### Web Developer
-**Versatile Productions Inc | Aug 2001 – Aug 2003 | Carbondale, CO**
-
-- Built client-facing websites and web applications.
-
 ---
 
 ## Skills & Technologies
 
 ### AI, ML & Data
-Python (scikit-learn, pandas), LLM APIs (OpenAI, Anthropic), AI agents, prompt engineering, RAG systems, semantic search, MCP, workflow automation, data extraction & normalization, model evaluation & calibration (spatial CV, OOD validation)
+Python (scikit-learn, pandas), LLM APIs (OpenAI, Anthropic, OpenRouter), AI agents, prompt engineering, RAG systems, semantic search, MCP, workflow automation, data extraction & normalization, model evaluation & calibration (spatial CV, OOD validation)
 
 ### Languages & Frontend
 TypeScript, JavaScript, Python, Solidity, C#, Dart, Rust, PHP, SQL | React, Next.js, React Native, Flutter, Tailwind CSS, Three.js, Unity (C#/DOTS)
