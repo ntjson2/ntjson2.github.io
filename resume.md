@@ -1,5 +1,5 @@
 # Nathan Johnson
-## Software Engineer — Applied AI & Data Systems
+## Principal Software Engineer | Applied AI & Data Systems Architect
 
 **Email:** ntjson@gmail.com | **LinkedIn:** linkedin.com/in/ntjson | **Location:** Missoula, MT
 
@@ -7,11 +7,7 @@
 
 ## Professional Summary
 
-Software engineer with over 20 years shipping production software. I build AI systems that extract, structure, grade, and operationalize real data — AI document-extraction APIs with calibrated quality scoring, multi-tenant field-data platforms, and honestly-evaluated machine-learning models.
-
-As founder of **Quetzal Collective LLC**, I build **AssayChain** — a production AI extraction and grading API with an append-only provenance layer — alongside **MineFlowTrack** (a multi-tenant geological field-data platform, in development). I also design and evaluate my own ML models using spatial cross-validation and probability calibration, and I document exactly where they do and don't generalize.
-
-I attempt to be pragmatic about technology: aiming for measurable results and production reliability. Blockchain, provenance, and agent-payable APIs are tools I apply where they add real value.
+Pragmatic, systems-focused engineer combining 20+ years of production full-stack experience with a rigorous, modern B.S. in Computer Science. Specializing in applied AI infrastructure, secure data extraction pipelines, and agentic orchestration via Model Context Protocol (MCP). Proven track record of managing engineering teams, migrating legacy architectures to resilient cloud microservices, and deploying honestly-evaluated machine learning models. Focused on delivering high-reliability, schema-validated AI deployments that drive measurable operational efficiency.
 
 ---
 
@@ -43,12 +39,10 @@ I attempt to be pragmatic about technology: aiming for measurable results and pr
 ### Founder & Principal Engineer — Quetzal Collective LLC (AssayChain)
 **May 2026 – Present | Missoula, MT**
 
-- Designed and shipped the production extraction and grading pipeline that turns unstructured assay documents (lab certificates, scanned reports, drill logs) into structured JSON with an honest A–D quality rubric.
-- Built the provenance layer — content-addressed storage plus an append-only attestation registry — so every extracted value is traceable to the source document it came from.
-- Shipped a web API and an MCP server so both people and AI agents can call the pipeline.
-- Built the benchmark harness that measures extraction accuracy with a confidence interval; validated on 57 USGS fire-assay samples and a 1937 state-survey fire-assay sheet.
-- Architected the full-stack platform: React/Next.js frontend, Node.js backend for USGS data aggregation, PostgreSQL, Solidity contracts for on-chain verification, and a 14-endpoint API across Google Cloud Functions with multi-tier auth.
-- Wired up IPFS and EAS attestation so mineral data is immutable and verifiable on-chain. This is critical for AI systems that need trustworthy data sources.
+- Architected and deployed AssayChain, a production-grade applied AI document-parsing pipeline transforming unstructured critical-mineral reports into schema-validated JSON.
+- Integrated Model Context Protocol (MCP) and agentic infrastructure to allow autonomous AI agents to securely query, ingest, and process graded data.
+- Built a custom machine-learning evaluation framework utilizing spatial cross-validation to isolate, benchmark, and document model generalization limits.
+- Standardized infrastructure across Node.js, Python, PostgreSQL, and AWS, implementing append-only data provenance layers and agent-payable (x402) protocols.
 
 ### Lead Blockchain & Cloud Engineer (Contract)
 **MineralFi | Nov 2023 – Present | Remote**
@@ -105,8 +99,10 @@ Jest, Vitest, Playwright, E2E testing, contract auditing, static analysis, secur
 
 ## Education
 
-**B.S., Computer Science – Software Engineering**
-University of Montana | May 2026
+**B.S. in Computer Science – Software Engineering**
+University of Montana (Graduated 2026) | Missoula, MT
+
+- Core Focus: Advanced Data Structures, Algorithmic Analysis, Machine Learning Systems, Database Architecture.
 
 **A.A., Programming & Application Development**
 Missoula College | 2023

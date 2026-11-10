@@ -570,6 +570,82 @@ h6 {
   text-decoration: none;
 }
 
+/*--------------------------------------------------------------
+# Hero — Name, Subtitle & Two-Track CTA (updated)
+--------------------------------------------------------------*/
+#hero {
+  height: auto;
+  min-height: 80vh;
+  padding: 130px 0 80px;
+}
+
+#hero h1 {
+  color: #fff;
+  margin: 0 0 8px;
+  font-size: clamp(32px, 6vw, 56px);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+#hero h2 {
+  color: #fff;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#hero .cta-two-track {
+  margin-top: 10px;
+}
+
+#hero .cta-heading {
+  color: #fff;
+  margin: 0 0 20px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+#hero .cta-col {
+  margin-bottom: 18px;
+}
+
+#hero .cta-card {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  padding: 24px 20px;
+  height: 100%;
+  color: #fff;
+}
+
+#hero .cta-icon {
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+#hero .cta-card h4 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+#hero .cta-card p {
+  width: auto;
+  margin: 0 0 14px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#hero .cta-card .btn-get-started {
+  padding: 9px 20px;
+  font-size: 13px;
+  margin: 4px;
+}
+
 @media (min-width: 1024px) {
   #hero p {
     width: 60%;
@@ -670,6 +746,18 @@ section {
   line-height: 28px;
   margin-bottom: 0;
   color: #777777;
+}
+
+.icon-boxes .project-stack {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #555;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.icon-boxes .project-stack strong {
+  color: #05579e;
 }
 
 /*--------------------------------------------------------------
@@ -2460,4 +2548,12 @@ section {
 
 #footer .credits a {
   color: #f6b024;
+}
+
+/* Mobile: keep the hero subtitle clearly smaller than the name */
+@media (max-width: 768px),
+(max-height: 700px) {
+  #hero h2 {
+    font-size: 20px;
+  }
 }
