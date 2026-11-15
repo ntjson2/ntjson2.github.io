@@ -1,5 +1,5 @@
 # Nathan Johnson
-## Principal Software Engineer | Applied AI & Data Systems Architect
+## Principal Forward Deployed Engineer | Applied AI, MCP & Enterprise Data Integration
 
 **Email:** ntjson@gmail.com | **LinkedIn:** linkedin.com/in/ntjson | **Location:** Missoula, MT
 
@@ -7,7 +7,7 @@
 
 ## Professional Summary
 
-Pragmatic, systems-focused engineer combining 20+ years of production full-stack experience with a rigorous, modern B.S. in Computer Science. Specializing in applied AI infrastructure, secure data extraction pipelines, and agentic orchestration via Model Context Protocol (MCP). Proven track record of managing engineering teams, migrating legacy architectures to resilient cloud microservices, and deploying honestly-evaluated machine learning models. Focused on delivering high-reliability, schema-validated AI deployments that drive measurable operational efficiency.
+**Principal Software Engineer and former CTO** with 20+ years of production experience specializing in **Forward Deployed AI Engineering**. Proven track record embedding with domain stakeholders to turn unstructured, messy operational data into production LLM pipelines, custom MCP servers, and calibrated ML systems. Experienced in customer discovery, rapid prototyping, evaluation harnesses, guardrails, schema normalization, and multi-tenant cloud (AWS/GCP) deployments.
 
 ---
 
@@ -18,12 +18,13 @@ Pragmatic, systems-focused engineer combining 20+ years of production full-stack
 - Built the provenance layer — content-addressed storage plus an append-only attestation registry — so every extracted value is traceable to the source document it came from.
 - Shipped an honest evaluation layer: 80% refund on Grade D and a manual-review flag on Grade C, rather than a black-box output.
 - Built the benchmark harness that measures extraction accuracy with a confidence interval; validated on 57 USGS fire-assay samples and a 1937 state-survey fire-assay sheet.
+- Built to bridge messy, domain-specific field documents with automated LLM extraction, cutting manual review cycles while maintaining auditable confidence scores.
 - Added PII redaction and ±0.1° coordinate rounding so sensitive data never reaches a response.
 - Exposed as a REST + MCP API usable from Claude, Cursor, VS Code, and the OpenAI Agents SDK; agent-payable via x402 (USDC on Base).
 - Stack: Python, Node.js, React/Next.js, PostgreSQL, AWS, Google Cloud, IPFS, EAS attestation.
 
 ### MineFlowTrack — Multi-tenant Geological Field-Data Platform (In Development)
-- Designed a Firestore multi-tenant data model with Google/Apple auth and an admin review/approval workflow.
+- Designed a Firestore multi-tenant data model and non-technical field-user workflows, with Google/Apple auth and an admin review/approval workflow.
 - Built an IPFS + EAS attestation export pipeline for verified field-data runs.
 - Modeled a sliding-scale profit-share and x402 revenue system integrated with AssayChain.
 
@@ -36,13 +37,13 @@ Pragmatic, systems-focused engineer combining 20+ years of production full-stack
 
 ## Professional Experience
 
-### Founder & Principal Engineer — Quetzal Collective LLC (AssayChain)
+### Principal Applied AI Engineer (Founder) — Quetzal Collective LLC (AssayChain)
 **May 2026 – Present | Missoula, MT**
 
-- Architected and deployed AssayChain, a production-grade applied AI document-parsing pipeline transforming unstructured critical-mineral reports into schema-validated JSON.
-- Integrated Model Context Protocol (MCP) and agentic infrastructure to allow autonomous AI agents to securely query, ingest, and process graded data.
-- Built a custom machine-learning evaluation framework utilizing spatial cross-validation to isolate, benchmark, and document model generalization limits.
-- Standardized infrastructure across Node.js, Python, PostgreSQL, and AWS, implementing append-only data provenance layers and agent-payable (x402) protocols.
+- Partnered directly with critical-minerals domain experts through customer discovery to define extraction schemas, then shipped a production LLM pipeline turning unstructured assay reports and drill logs into schema-normalized JSON.
+- Built custom Model Context Protocol (MCP) servers and agentic infrastructure so autonomous AI agents can securely query, ingest, and process graded data.
+- Designed evaluation harnesses with confidence intervals and spatial cross-validation; added guardrails (PII redaction, Grade C manual-review flags, Grade D refunds) and documented where the model does and does not generalize.
+- Standardized multi-tenant infrastructure across Node.js, Python, PostgreSQL, AWS and GCP, with append-only provenance/audit layers and agent-payable (x402) protocols.
 
 ### Lead Blockchain & Cloud Engineer (Contract)
 **MineralFi | Nov 2023 – Present | Remote**
@@ -52,12 +53,12 @@ Pragmatic, systems-focused engineer combining 20+ years of production full-stack
 - Engineered a real-time analytics stack (Next.js, GraphQL, DynamoDB) and integrated Uniswap V3 for automated liquidity (~30% capital-efficiency improvement).
 - Established CI/CD with GitHub Actions and Hardhat contract testing, substantially reducing production issues.
 
-### Independent Full-Stack Software Engineer
+### Principal Consulting & Forward Deployed Engineer
 **Self-employed | Oct 2018 – Present | Missoula, MT**
 
-- Contract engineering across the stack — Rust, Solidity, React/Next.js, Python/Django, Unity (C#/DOTS), Three.js, LAMP, and AWS (Ubuntu, LightSail, ECS).
-- Delivered production web apps, blockchain systems, and real-time interactive systems for clients.
-- Recent focus: applied AI and data systems (see AssayChain / Quetzal Collective LLC above).
+- Led customer discovery and rapid prototyping for ambiguous client problems, translating messy requirements into working software fast.
+- Shipped full-stack solutions into client cloud environments (AWS/GCP) with production handoff — Rust, React/Next.js, Python/Django, Unity (C#/DOTS), Three.js, and LAMP.
+- Recent focus: embedded applied-AI deployments — LLM extraction pipelines, RAG, custom MCP integrations, and evaluation harnesses (see AssayChain above).
 
 ### CTO & Co-founder — Numa Ridge (Lostone)
 **Numa Ridge | May 2018 – Oct 2020 | Missoula, MT**
@@ -69,9 +70,9 @@ Pragmatic, systems-focused engineer combining 20+ years of production full-stack
 ### Lead Software Developer
 **Rocky Mountain Rehab | May 2006 – Nov 2018 | Missoula, MT**
 
-- Led a statewide case-management platform (Angular, .NET Core, MySQL) for disability services, employment counseling, and independent-living coordination.
-- Mentored an 8-person engineering team; introduced DevOps practices, automated testing, and CI/CD, increasing delivery velocity ~25%.
-- Migrated legacy monolithic systems to a microservices architecture with API-first design, improving resilience and maintainability.
+- Led a statewide case-management platform (Angular, .NET Core, MySQL), aligning non-technical stakeholders across disability services, employment counseling, and independent-living programs.
+- Mentored an 8-person engineering team; introduced DevOps, automated testing, and CI/CD, increasing delivery velocity ~25%.
+- Migrated legacy monolithic systems to an API-first microservices architecture — directly applicable to integrating modern AI with aging enterprise software.
 
 ---
 
@@ -79,6 +80,9 @@ Pragmatic, systems-focused engineer combining 20+ years of production full-stack
 
 ### AI, ML & Data
 Python (scikit-learn, pandas), LLM APIs (OpenAI, Anthropic, OpenRouter), AI agents, prompt engineering, RAG systems, semantic search, MCP, workflow automation, data extraction & normalization, model evaluation & calibration (spatial CV, OOD validation)
+
+### Forward Deployed & Delivery
+Customer discovery, rapid prototyping, production handoff, evaluation harnesses & guardrails, schema normalization, multi-tenant cloud (AWS/GCP), MCP server development
 
 ### Languages & Frontend
 TypeScript, JavaScript, Python, Solidity, C#, Dart, Rust, PHP, SQL | React, Next.js, React Native, Flutter, Tailwind CSS, Three.js, Unity (C#/DOTS)
@@ -89,8 +93,8 @@ Node.js, Express, Django, FastAPI, REST/GraphQL APIs | PostgreSQL, MySQL, MongoD
 ### Cloud & DevOps
 AWS (Lambda, EC2, RDS, S3, DynamoDB, API Gateway, LightSail, ECS), Firebase, Google Cloud, Docker, GitHub Actions, CI/CD, LAMP
 
-### Blockchain & Web3 (supporting capability)
-Solidity, Ethereum/Polygon, ERC-20/721/1155, OpenZeppelin, Hardhat, Foundry, Uniswap, IPFS, EAS attestation, x402 protocol
+### Data Provenance, Auditability & Agent Protocols (MCP / x402)
+Append-only provenance, EAS attestation, IPFS content addressing, MCP servers, x402 agent-payable APIs; Solidity / ERC-20/721/1155 where it adds value
 
 ### Testing & Quality
 Jest, Vitest, Playwright, E2E testing, contract auditing, static analysis, security reviews
