@@ -6,8 +6,13 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Nathan Johnson — Resume | Principal Forward Deployed Engineer, Applied AI &amp; MCP</title>
-  <meta content="Nathan Johnson's professional resume: Principal Forward Deployed Engineer and former CTO specializing in applied AI, MCP, and enterprise data integration. 20+ years building production LLM pipelines and calibrated ML systems for unstructured data." name="description">
+  <meta content="Nathan Johnson's resume: Principal Forward Deployed Engineer and former CTO with 20+ years of production experience. I build and ship LLM pipelines, custom MCP servers, and calibrated ML systems for unstructured data; open to Principal or Staff FDE and Applied AI Architect roles." name="description">
   <meta content="Resume, CV, Forward Deployed Engineer, FDE, Principal Software Engineer, Applied AI, Enterprise Data Integration, MCP, RAG, AssayChain, MineFlowTrack, Python, TypeScript, full-stack" name="keywords">
+  <link rel="canonical" href="https://ntjson2.github.io/resume.html">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Nathan Johnson — Resume | Principal Forward Deployed Engineer">
+  <meta property="og:description" content="Principal Forward Deployed Engineer and former CTO with 20+ years of production experience. Production LLM pipelines, custom MCP servers, and calibrated ML systems for unstructured data.">
+  <meta property="og:url" content="https://ntjson2.github.io/resume.html">
 
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -24,6 +29,11 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <link href="assets/css/style.css" rel="stylesheet">
+  <noscript>
+    <style>
+      [data-aos] { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
 </head>
 
 <body>
@@ -77,144 +87,90 @@
     <section id="resume" class="resume">
       <div class="container" data-aos="fade-up">
 
+        <div class="resume-header">
+          <h3>Nathan Johnson</h3>
+          <p class="resume-subtitle">Principal Forward Deployed Engineer | Applied AI, MCP &amp; Enterprise Data Integration</p>
+          <p class="resume-contact">
+            Missoula, MT | Open to remote and customer-site travel<br>
+            <a href="mailto:ntjson@gmail.com">ntjson@gmail.com</a> |
+            <a href="https://www.linkedin.com/in/ntjson">linkedin.com/in/ntjson</a> |
+            <a href="https://github.com/ntjson2">github.com/ntjson2</a> |
+            <a href="https://ntjson2.github.io">ntjson2.github.io</a>
+          </p>
+          <div class="resume-actions">
+            <a href="Nathan_Johnson_Resume.pdf" class="btn-resume-primary" download>Download PDF Resume</a>
+            <a href="resume-ats.txt" class="btn-resume-secondary" download>Plain-Text Version</a>
+            <a href="cv.html" class="btn-resume-secondary">Full CV</a>
+          </div>
+        </div>
+
         <div class="section-title">
           <h2>Professional Summary</h2>
         </div>
-
         <div class="row">
           <div class="col-lg-12">
             <p>
-              <strong>Principal Software Engineer and former CTO</strong> with <strong>20+ years of production experience</strong>, focused on
-              <strong>Forward Deployed AI Engineering</strong>. Works directly with domain teams to define schemas and success criteria, then builds and
-              deploys production LLM pipelines, custom MCP servers, and calibrated ML systems. Experienced in customer discovery, rapid prototyping,
-              evaluation harnesses, guardrails, schema normalization, and multi-tenant cloud (AWS/GCP) deployments.
+              Principal Software Engineer and former CTO with <strong>20+ years of production experience</strong>, focused on
+              <strong>Forward Deployed AI Engineering</strong>. I embed with domain teams to define schemas and success criteria, then build
+              and ship production LLM pipelines, RAG systems, custom MCP servers, and calibrated ML systems for unstructured data. Experience
+              includes customer discovery, rapid prototyping, evaluation harnesses, guardrails, schema normalization, and multi-tenant AWS/GCP
+              deployments.
             </p>
+            <p><strong>Open to Principal or Staff Forward Deployed Engineer and Applied AI Architect roles.</strong></p>
           </div>
         </div>
 
-        <div class="section-title">
-          <h2>Projects &amp; Selected Work</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12">
-
-            <div class="resume-item">
-              <h4>AssayChain — AI Document Extraction &amp; Grading API</h4>
-              <h5>In Production</h5>
-              <ul>
-                <li>Designed and shipped the production extraction and grading pipeline that turns unstructured assay documents (lab certificates, scanned reports, drill logs) into structured JSON with an honest A–D quality rubric — structural validity, coverage, self-consistency (a second independent extraction pass), and physical-bounds cross-checking. I recently submitted this project to NSF SBIR proposal for further development and evaluation.</li>
-                <li>Built the provenance layer — content-addressed storage plus an append-only attestation registry — so every extracted value is traceable to the source document it came from.</li>
-                <li>Shipped an honest evaluation layer: 80% refund on Grade D and a manual-review flag on Grade C, rather than a black-box output.</li>
-                <li>Built the benchmark harness that measures extraction accuracy with a confidence interval; validated on 57 USGS fire-assay samples and a 1937 state-survey fire-assay sheet.</li>
-                <li>Added PII redaction and ±0.1° coordinate rounding so sensitive data never reaches a response.</li>
-                <li>Exposed as a REST + MCP API usable from Claude, Cursor, VS Code, and the OpenAI Agents SDK; agent-payable via x402 (USDC on Base).</li>
-                <li>Stack: Python, Node.js, React/Next.js, PostgreSQL, AWS, Google Cloud, IPFS, EAS attestation.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>MineFlowTrack — Multi-tenant Geological Field-Data Platform</h4>
-              <h5>In Development</h5>
-              <ul>
-                <li>Designed a Firestore multi-tenant data model with Google/Apple auth and an admin review/approval workflow.</li>
-                <li>Built an IPFS + EAS attestation export pipeline for verified field-data runs.</li>
-                <li>Modeled a sliding-scale profit-share and x402 revenue system integrated with AssayChain.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Mineral Prospectivity Model — Honest ML Evaluation</h4>
-              <h5>Data Science / Machine Learning</h5>
-              <ul>
-                <li>Trained a multi-label logistic regression model (scikit-learn) predicting metal occurrence from geology, using leave-one-state-out spatial cross-validation to avoid data leakage.</li>
-                <li>Calibrated probabilities (sigmoid) and validated on a strict out-of-region hold-out; documented where the model does and does not generalize.</li>
-                <li>Gold occurrence predicted at F1 0.87 in-region.</li>
-              </ul>
-            </div>
-
-          </div>
+        <div class="row text-center mt-4 mb-5">
+          <div class="col-6 col-md-3 mb-3"><div class="proof-stat"><strong>20+</strong><span>years in production software</span></div></div>
+          <div class="col-6 col-md-3 mb-3"><div class="proof-stat"><strong>57</strong><span>USGS samples used for validation</span></div></div>
+          <div class="col-6 col-md-3 mb-3"><div class="proof-stat"><strong>80%</strong><span>refund on Grade D extraction</span></div></div>
+          <div class="col-6 col-md-3 mb-3"><div class="proof-stat"><strong>0.87</strong><span>gold F1 in-region</span></div></div>
         </div>
 
         <div class="section-title">
           <h2>Professional Experience</h2>
         </div>
-
         <div class="row">
           <div class="col-lg-12">
 
             <div class="resume-item">
-              <h4>Principal Applied AI Engineer (Founder) — Quetzal Collective LLC (AssayChain)</h4>
-              <h5>May 2026 – Present</h5>
-              <p><em>Missoula, MT</em></p>
+              <h4>Principal Applied AI Engineer (Founder) | Quetzal Collective LLC (AssayChain)</h4>
+              <h5>May 2026 – Present <span>| Missoula, MT</span></h5>
               <ul>
-                <li>Partnered directly with critical-minerals domain experts through customer discovery to define extraction schemas, then shipped a production LLM pipeline turning unstructured assay reports and drill logs into schema-normalized JSON.</li>
-                <li>Built custom Model Context Protocol (MCP) servers and agentic infrastructure so autonomous AI agents can securely query, ingest, and process graded data.</li>
+                <li>Embedded with critical-minerals domain experts through customer discovery to define extraction schemas and success criteria, then shipped a production LLM pipeline that converts assay reports and drill logs into schema-normalized JSON.</li>
+                <li>Built custom Model Context Protocol (MCP) servers and agentic infrastructure so Claude, Cursor, VS Code, and OpenAI Agents SDK clients can securely query, ingest, and process graded data.</li>
                 <li>Designed evaluation harnesses with confidence intervals and spatial cross-validation; added guardrails (PII redaction, Grade C manual-review flags, Grade D refunds) and documented where the model does and does not generalize.</li>
-                <li>Standardized multi-tenant infrastructure across Node.js, Python, PostgreSQL, AWS and GCP, with append-only provenance/audit layers and agent-payable (x402) protocols.</li>
+                <li>Standardized multi-tenant infrastructure across Node.js, Python, PostgreSQL, AWS, and GCP, with append-only provenance and audit layers plus agent-payable x402 APIs.</li>
               </ul>
             </div>
 
             <div class="resume-item">
-              <h4>Lead Blockchain &amp; Cloud Engineer (Contract)</h4>
-              <h5>MineralFi • Nov 2023 – Present</h5>
-              <p><em>Remote</em></p>
+              <h4>Principal Consulting and Forward Deployed Engineer | Self-employed</h4>
+              <h5>Oct 2018 – Present <span>| Missoula, MT</span></h5>
               <ul>
-                <li>Designed upgradeable ERC-20 and ERC-1155 contracts (OpenZeppelin) for the MINFI token, handling high-volume transactions.</li>
-                <li>Built NFT systems for performance-based incentives and stakeholder trusts with milestone-based payouts.</li>
-                <li>Engineered a real-time analytics stack (Next.js, GraphQL, DynamoDB) and integrated Uniswap V3 for automated liquidity (~30% capital-efficiency improvement).</li>
-                <li>Established CI/CD with GitHub Actions and Hardhat contract testing, substantially reducing production issues.</li>
+                <li>Led customer discovery and rapid prototyping for ambiguous client problems, delivering working software in short iterations and handing off to client teams.</li>
+                <li>Shipped full-stack systems into client AWS/GCP environments using Rust, React/Next.js, Python/Django, Unity (C#/DOTS), Three.js, and LAMP.</li>
+                <li>Recent focus: embedded applied-AI deployments, including LLM extraction pipelines, RAG, custom MCP integrations, and evaluation harnesses.</li>
               </ul>
             </div>
 
             <div class="resume-item">
-              <h4>Principal Consulting &amp; Forward Deployed Engineer</h4>
-              <h5>Self-employed • Oct 2018 – Present</h5>
-              <p><em>Missoula, MT</em></p>
+              <h4>CTO and Co-founder | Numa Ridge (Lostone)</h4>
+              <h5>May 2018 – Oct 2020 <span>| Missoula, MT</span></h5>
               <ul>
-                <li>Led customer discovery and rapid prototyping for ambiguous client problems, delivering working software in short iterations.</li>
-                <li>Shipped full-stack solutions into client cloud environments (AWS/GCP) with production handoff — Rust, React/Next.js, Python/Django, Unity (C#/DOTS), Three.js, and LAMP.</li>
-                <li>Recent focus: embedded applied-AI deployments — LLM extraction pipelines, RAG, custom MCP integrations, and evaluation harnesses (see AssayChain above).</li>
+                <li>Co-founded and led engineering for Lostone, a real-world multiplayer treasure-hunting game that tied a game economy to public-lands exploration.</li>
+                <li>Owned the full stack and multiplayer networking architecture (Unity, Docker, AWS EC2), including secure asset sync, real-time communication, and scalable matchmaking.</li>
+                <li>Met hard real-time milestones; the side venture was wound down in 2020.</li>
               </ul>
             </div>
 
             <div class="resume-item">
-              <h4>CTO &amp; Co-founder — Numa Ridge (Lostone)</h4>
-              <h5>Numa Ridge • May 2018 – Oct 2020</h5>
-              <p><em>Missoula, MT</em></p>
+              <h4>Lead Software Developer | Rocky Mountain Rehab</h4>
+              <h5>May 2006 – Nov 2018 <span>| Missoula, MT</span></h5>
               <ul>
-                <li>Co-founded and led engineering for Lostone, a real-world, multiplayer treasure-hunting game that tied a game economy to public-lands exploration.</li>
-                <li>Owned the full stack and the multiplayer networking architecture (Unity, Docker, AWS EC2) with secure asset sync, real-time communication, and scalable matchmaking.</li>
-                <li>Hit several hard real-time milestones. (Side venture pursued while contracting; wound down in 2020.)</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Lead Software Developer</h4>
-              <h5>Rocky Mountain Rehab • May 2006 – Nov 2018</h5>
-              <p><em>Missoula, MT</em></p>
-              <ul>
-                <li>Led a statewide case-management platform (Angular, .NET Core, MySQL), aligning non-technical stakeholders across disability services, employment counseling, and independent-living programs.</li>
-                <li>Mentored an 8-person engineering team; introduced DevOps, automated testing, and CI/CD, increasing delivery velocity ~25%.</li>
-                <li>Migrated legacy monolithic systems to an API-first microservices architecture — directly applicable to integrating modern AI with aging enterprise software.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Software Developer</h4>
-              <h5>USIS • May 2004 – Sep 2005</h5>
-              <p><em>Greater Billings Area</em></p>
-              <ul>
-                <li>Full-stack software development delivering enterprise web applications.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Web Developer</h4>
-              <h5>Versatile Productions Inc • Aug 2001 – Aug 2003</h5>
-              <p><em>Carbondale, CO</em></p>
-              <ul>
-                <li>Built client-facing websites and web applications.</li>
+                <li>Led a statewide case-management platform (Angular, .NET Core, MySQL), aligning stakeholders across disability services, employment counseling, and independent-living programs.</li>
+                <li>Mentored an 8-person engineering team and introduced DevOps, automated testing, and CI/CD, increasing delivery velocity by approximately 25%.</li>
+                <li>Migrated legacy monoliths to an API-first microservices architecture, directly applicable to integrating modern AI with aging enterprise software.</li>
               </ul>
             </div>
 
@@ -222,35 +178,79 @@
         </div>
 
         <div class="section-title">
-          <h2>Skills &amp; Technologies</h2>
+          <h2>Additional Experience</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="resume-item">
+              <h4>Lead Blockchain and Cloud Engineer (Contract) | MineralFi</h4>
+              <h5>Nov 2023 – Present <span>| Remote</span></h5>
+              <ul>
+                <li>Designed upgradeable ERC-20 and ERC-1155 contracts (OpenZeppelin) for the MINFI token and built NFT systems for performance-based incentives and stakeholder trusts with milestone-based payouts.</li>
+                <li>Built real-time analytics (Next.js, GraphQL, DynamoDB), integrated Uniswap V3 for automated liquidity (approximately 30% capital-efficiency improvement), and established CI/CD with GitHub Actions and Hardhat contract testing.</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
+        <div class="section-title">
+          <h2>Selected Projects</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+
+            <div class="resume-item">
+              <h4>AssayChain | AI Document Extraction and Grading API <span class="text-success">(In Production)</span></h4>
+              <ul>
+                <li>Production extraction and grading pipeline for lab certificates, scanned reports, and drill logs, producing structured JSON against an A–D quality rubric: structural validity, coverage, self-consistency through a second independent extraction pass, and physical-bounds cross-checking. Submitted to NSF SBIR for further development and evaluation.</li>
+                <li>Provenance layer using content-addressed storage and an append-only attestation registry, so every extracted value is traceable to its source document.</li>
+                <li>Benchmark harness that reports extraction accuracy with confidence intervals, validated on 57 USGS fire-assay samples and a 1937 state-survey fire-assay sheet; Grade D earns an 80% refund and Grade C is flagged for manual review.</li>
+                <li>Exposed as a REST and MCP API usable from Claude, Cursor, VS Code, and the OpenAI Agents SDK, and agent-payable via x402 (USDC on Base). Stack: Python, Node.js, React/Next.js, PostgreSQL, AWS, Google Cloud, IPFS, and EAS attestation.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>MineFlowTrack | Multi-tenant Geological Field-Data Platform <span class="text-warning">(In Development)</span></h4>
+              <ul>
+                <li>Designed a Firestore multi-tenant data model and non-technical field-user workflows, with Google/Apple authentication and an admin review/approval workflow.</li>
+                <li>Built an IPFS and EAS attestation export pipeline for verified field-data runs, and modeled a sliding-scale profit-share and x402 revenue system integrated with AssayChain.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Mineral Prospectivity Model | Honest ML Evaluation</h4>
+              <ul>
+                <li>Trained a multi-label logistic regression model (scikit-learn) to predict metal occurrence from geology, using leave-one-state-out spatial cross-validation to avoid data leakage; calibrated probabilities and validated on a strict out-of-region hold-out.</li>
+                <li>Documented where the model does and does not generalize; gold occurrence predicted at F1 0.87 in-region.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section-title">
+          <h2>Skills</h2>
+        </div>
         <div class="row">
           <div class="col-md-6">
             <div class="skills-list">
-              <strong>AI, ML &amp; Data</strong>
-              <p>Python (scikit-learn, pandas), LLM APIs (OpenAI, Anthropic), AI agents, prompt engineering, RAG systems, semantic search, MCP, workflow automation, data extraction &amp; normalization, model evaluation &amp; calibration (spatial CV, OOD validation)</p>
+              <strong>AI/ML and Data</strong>
+              <p>Python (scikit-learn, pandas), LLM APIs (OpenAI, Anthropic, OpenRouter), RAG, semantic search, AI agents, prompt engineering, data extraction, schema normalization, model evaluation and calibration (spatial CV, OOD validation).</p>
 
-              <strong>Forward Deployed &amp; Delivery</strong>
-              <p>Customer discovery, rapid prototyping, production handoff, evaluation harnesses &amp; guardrails, schema normalization, multi-tenant cloud (AWS/GCP), MCP server development</p>
+              <strong>Forward Deployed and Delivery</strong>
+              <p>Customer discovery, rapid prototyping, solution architecture, production handoff, evaluation harnesses, guardrails, multi-tenant cloud (AWS/GCP), MCP server development.</p>
 
-              <strong>Languages &amp; Frontend</strong>
-              <p>TypeScript, JavaScript, Python, Solidity, C#, Dart, Rust, PHP, SQL | React, Next.js, React Native, Flutter, Tailwind CSS, Three.js, Unity (C#/DOTS)</p>
-
-              <strong>Cloud &amp; DevOps</strong>
-              <p>AWS (Lambda, EC2, RDS, S3, DynamoDB, API Gateway, LightSail, ECS), Firebase, Google Cloud, Docker, GitHub Actions, CI/CD, LAMP</p>
+              <strong>Languages and Frontend</strong>
+              <p>TypeScript, JavaScript, Python, Rust, C#, Dart, Solidity, PHP, SQL; React, Next.js, React Native, Flutter, Tailwind CSS, Three.js, Unity (C#/DOTS).</p>
             </div>
           </div>
           <div class="col-md-6">
             <div class="skills-list">
-              <strong>Backend &amp; Databases</strong>
-              <p>Node.js, Express, Django, FastAPI, REST/GraphQL APIs | PostgreSQL, MySQL, MongoDB, DynamoDB, Firestore, Firebase, Redis</p>
+              <strong>Backend, Data, and Cloud</strong>
+              <p>Node.js, Express, Django, FastAPI, REST/GraphQL; PostgreSQL, MySQL, MongoDB, DynamoDB, Firestore, Redis; AWS (Lambda, EC2, RDS, S3, API Gateway, ECS), Google Cloud, Firebase, Docker, GitHub Actions, CI/CD.</p>
 
-              <strong>Data Provenance, Auditability &amp; Agent Protocols (MCP / x402)</strong>
-              <p>Append-only provenance, EAS attestation, IPFS content addressing, MCP servers, x402 agent-payable APIs; Solidity / ERC-20/721/1155 where it adds value</p>
-
-              <strong>Testing &amp; Quality</strong>
-              <p>Jest, Vitest, Playwright, E2E testing, contract auditing, static analysis, security reviews</p>
+              <strong>Provenance, Protocols, and Quality</strong>
+              <p>Append-only provenance, EAS attestation, IPFS, MCP, x402; Jest, Vitest, Playwright, E2E testing, contract auditing, static analysis, security reviews.</p>
             </div>
           </div>
         </div>
@@ -258,38 +258,38 @@
         <div class="section-title">
           <h2>Education</h2>
         </div>
-
         <div class="row">
           <div class="col-lg-12">
             <div class="resume-item">
-              <h4>B.S. in Computer Science – Software Engineering</h4>
-              <p><em>University of Montana (Graduated 2026) — Missoula, MT</em></p>
-              <p>Core Focus: Advanced Data Structures, Algorithmic Analysis, Machine Learning Systems, Database Architecture.</p>
+              <h4>B.S. Computer Science, Software Engineering | University of Montana</h4>
+              <h5>2026 <span>| Missoula, MT</span></h5>
+              <p>Relevant coursework: Advanced Data Structures, Algorithmic Analysis, Machine Learning Systems, Database Architecture.</p>
             </div>
             <div class="resume-item">
-              <h4>A.A., Programming &amp; Application Development</h4>
-              <p><em>Missoula College — 2023</em></p>
+              <h4>A.A. Programming and Application Development | Missoula College</h4>
+              <h5>2023</h5>
             </div>
           </div>
         </div>
 
         <div class="section-title">
-          <h2>Certifications &amp; Professional Training</h2>
+          <h2>Certifications and Training</h2>
         </div>
-
         <div class="row">
           <div class="col-lg-12">
             <ul class="certifications-list">
-              <li>AWS Academy Cloud Foundations — AWS Academy Graduate</li>
-              <li>Firebase Web Advanced — Google Developer Training</li>
-              <li>Advanced OpenAI API Integration — Self-Directed Study</li>
-              <li>IPFS &amp; Distributed Systems Architecture — Self-Directed Study</li>
+              <li>AWS Academy Cloud Foundations | AWS Academy Graduate</li>
+              <li>Firebase Web Advanced | Google Developer Training</li>
+              <li>Advanced OpenAI API Integration | Professional development</li>
+              <li>IPFS and Distributed Systems Architecture | Professional development</li>
             </ul>
           </div>
         </div>
 
-        <div style="text-align:center; margin: 2rem 0 1rem;">
-          <a href="cv.html" class="btn-learn-more">View Full CV</a>
+        <div class="resume-footer-actions">
+          <a href="Nathan_Johnson_Resume.pdf" class="btn-resume-primary" download>Download PDF Resume</a>
+          <a href="resume-ats.txt" class="btn-resume-secondary" download>Plain-Text Version</a>
+          <a href="cv.html" class="btn-resume-secondary">View Full CV</a>
         </div>
 
       </div>
