@@ -6,32 +6,32 @@ Copy-paste blocks for Nathan Johnson's LinkedIn profile. No emoji.
 
 ## Headline (220 character max)
 
-Principal Forward Deployed Engineer | Applied AI, MCP & LLM Data Pipelines | Turning Unstructured Enterprise Data into Production AI Systems | 20+ Yrs Full-Stack & Cloud
+Principal Forward Deployed Engineer | Applied AI, MCP & LLM Data Pipelines | Production Systems for Unstructured Enterprise Data | 20+ Yrs Full-Stack & Cloud
 
-_Character count: 169 / 220._
+_Character count: 157 / 220._
 
 ### Headline alternatives
 
-- Principal Forward Deployed Engineer | Applied AI, MCP & Enterprise Data Integration | I embed with domain teams to ship production LLM systems | 20+ Yrs Full-Stack & Cloud
-- Forward Deployed AI Engineer | Principal Software Engineer | MCP, RAG & Evaluation Harnesses | Turning messy operational data into auditable production AI
+- Principal Forward Deployed Engineer | Applied AI, MCP & Enterprise Data Integration | Embedded with domain teams to ship production LLM systems | 20+ Yrs Full-Stack & Cloud
+- Forward Deployed AI Engineer | Principal Software Engineer | MCP, RAG & Evaluation Harnesses | Auditable Production AI for Unstructured Data
 
 ---
 
 ## About
 
-I help organizations bridge the gap between frontier AI models and messy real-world operations. With 20+ years of production engineering experience and a B.S. in Computer Science, I specialize in embedding with domain teams to build reliable LLM extraction pipelines, custom MCP integrations, and measurable evaluation frameworks.
+I'm a Principal Software Engineer and former CTO with 20+ years of production experience and a B.S. in Computer Science. My work centers on applied AI: embedding with domain teams to build reliable LLM extraction pipelines, custom MCP integrations, and evaluation frameworks that measure what the system actually does.
 
-I am a Principal Software Engineer and former CTO who works best close to the customer. My approach is simple: run customer discovery with the people who actually do the work, define schemas and success criteria with them, prototype fast, and then ship a production system into their own cloud environment — with the guardrails, audit trails, and handoff documentation that let their team own it.
+I do my best work close to the people who use the system: customer discovery with the team doing the work, schemas and success criteria defined together, a working prototype early, then a production deployment in their own cloud environment with the guardrails, audit trails, and documentation their team needs to own it.
 
 Recent forward-deployed work:
 
-- **AssayChain** — production LLM pipeline that turns messy critical-minerals field documents into schema-validated JSON, with an honest A–D quality rubric, append-only provenance, and an evaluation harness that reports accuracy with confidence intervals.
-- **MineFlowTrack** — multi-tenant geological field-data platform designed around non-technical field users, with admin review/approval workflows and attestation-backed export.
+- **AssayChain** — production LLM pipeline that converts critical-minerals assay reports and drill logs into schema-validated JSON, with an honest A–D quality rubric, append-only provenance, and an evaluation harness that reports accuracy with confidence intervals.
+- **MineFlowTrack** — multi-tenant geological field-data platform designed for non-technical field users, with admin review/approval workflows and attestation-backed export.
 - **Mineral Prospectivity Model** — calibrated ML using leave-one-state-out spatial cross-validation, with documented out-of-region limits (gold F1 0.87 in-region).
 
 Core stack: Python, TypeScript, Node.js, React/Next.js, PostgreSQL, AWS, Google Cloud, MCP, RAG, LLM APIs (OpenAI, Anthropic), evaluation harnesses, guardrails, schema normalization.
 
-I am open to Principal / Staff Forward Deployed Engineer and Applied AI Architecture roles where the work is customer-facing, operationally messy, and measured in production outcomes.
+I am open to Principal / Staff Forward Deployed Engineer and Applied AI Architecture roles where the work is customer-facing and measured in production outcomes.
 
 Portfolio: https://ntjson2.github.io
 GitHub: https://github.com/ntjson2
@@ -44,7 +44,7 @@ Email: ntjson@gmail.com
 1. **Portfolio site** — https://ntjson2.github.io
    Caption: "Production applied-AI systems, custom MCP integrations, and honest ML evaluation."
 2. **AssayChain: A–D quality grading and benchmark harness** — short post, architecture diagram, or carousel.
-   Caption: "How I grade messy field-document extraction honestly, report accuracy with confidence intervals, and flag low-confidence output for manual review."
+   Caption: "How I grade field-document extraction, report accuracy with confidence intervals, and flag low-confidence output for manual review."
 3. **Custom MCP server walkthrough** — repo snippet, short video, or post.
    Caption: "A practical custom MCP server that lets Claude, Cursor, VS Code, and the OpenAI Agents SDK query production data safely."
 
@@ -88,7 +88,7 @@ Partner directly with critical-minerals domain experts through customer discover
 
 Oct 2018 – Present · Missoula, MT
 
-- Led customer discovery and rapid prototyping for ambiguous client problems, translating messy requirements into working software fast.
+- Led customer discovery and rapid prototyping for ambiguous client problems, delivering working software in short iterations.
 - Shipped full-stack solutions into client cloud environments (AWS/GCP) with production handoff — Rust, React/Next.js, Python/Django, Unity (C#/DOTS), Three.js, and LAMP.
 - Recent focus: embedded applied-AI deployments — LLM extraction pipelines, RAG, custom MCP integrations, and evaluation harnesses.
 
@@ -105,7 +105,7 @@ May 2006 – Nov 2018 · Missoula, MT
 ## Profile checklist
 
 - [ ] Replace headline with the primary headline above.
-- [ ] Replace About section; confirm the first ~250 characters lead with the forward-deployed value proposition.
+- [ ] Replace About section; confirm the first ~250 characters state the forward-deployed value proposition.
 - [ ] Pin the three Featured items (portfolio, AssayChain grading/benchmark, MCP server walkthrough).
 - [ ] Pin MCP, LLM, and AI Agents as the top three skills.
 - [ ] Set Open to Work (recruiters only) with the five target titles above.

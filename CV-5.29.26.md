@@ -5,7 +5,7 @@ Missoula, MT | [ntjson@gmail.com](mailto:ntjson@gmail.com) | [linkedin.com/in/nt
 
 ### **Professional Summary**
 
-**Principal Software Engineer and former CTO** with 20+ years of production experience specializing in **Forward Deployed AI Engineering**. Proven track record embedding with domain stakeholders to turn unstructured, messy operational data into production LLM pipelines, custom MCP servers, and calibrated ML systems. Experienced in customer discovery, rapid prototyping, evaluation harnesses, guardrails, schema normalization, and multi-tenant cloud (AWS/GCP) deployments.
+**Principal Software Engineer and former CTO** with 20+ years of production experience, focused on **Forward Deployed AI Engineering**. Works directly with domain teams to define schemas and success criteria, then builds and deploys production LLM pipelines, custom MCP servers, and calibrated ML systems. Experienced in customer discovery, rapid prototyping, evaluation harnesses, guardrails, schema normalization, and multi-tenant cloud (AWS/GCP) deployments.
 
 ### **Core Expertise**
 
@@ -24,7 +24,7 @@ Missoula, MT | [ntjson@gmail.com](mailto:ntjson@gmail.com) | [linkedin.com/in/nt
 * Built an AI pipeline that converts unstructured assay documents (lab certificates, scanned reports, drill logs) into structured JSON with an honest A–D rubric (structural validity, coverage, self-consistency via a second extraction pass, physical-bounds cross-check).
 * Built the provenance layer — content-addressed storage plus an append-only attestation registry — so every extracted value is traceable to its source document.
 * Built a benchmark harness that measures extraction accuracy with a confidence interval; validated on 57 USGS fire-assay samples and a 1937 state-survey fire-assay sheet.
-* Built to bridge messy, domain-specific field documents with automated LLM extraction, cutting manual review cycles while maintaining auditable confidence scores.
+* Connects domain-specific field documents to automated LLM extraction, reducing manual review while keeping confidence scores auditable.
 * Shipped an honest evaluation layer: 80% refund on Grade D, manual-review flag on Grade C, PII redaction, and ±0.1° coordinate rounding.
 * Exposed as a REST + MCP API for Claude, Cursor, VS Code, and the OpenAI Agents SDK; agent-payable via x402 (USDC on Base).
 * Stack: Python, Node.js, React/Next.js, PostgreSQL, AWS, Google Cloud, IPFS, EAS attestation.
@@ -62,7 +62,7 @@ Missoula, MT | [ntjson@gmail.com](mailto:ntjson@gmail.com) | [linkedin.com/in/nt
 
 **Self-employed** • Oct 2018 – Present | *Missoula, MT*
 
-* Led customer discovery and rapid prototyping for ambiguous client problems, translating messy requirements into working software fast.
+* Led customer discovery and rapid prototyping for ambiguous client problems, delivering working software in short iterations.
 * Shipped full-stack solutions into client cloud environments (AWS/GCP) with production handoff — Rust, React/Next.js, Python/Django, Unity (C#/DOTS), Three.js, and LAMP.
 
 #### **CTO & Co-founder — Numa Ridge (Lostone)**
