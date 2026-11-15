@@ -8,7 +8,7 @@ Copy-paste blocks for Nathan Johnson's LinkedIn profile. No emoji.
 
 Principal Forward Deployed Engineer | Applied AI, MCP & LLM Data Pipelines | Turning Unstructured Enterprise Data into Production AI Systems | 20+ Yrs Full-Stack & Cloud
 
-_Character count: 170 / 220._
+_Character count: 169 / 220._
 
 ### Headline alternatives
 
