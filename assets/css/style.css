@@ -594,6 +594,13 @@ h6 {
   font-weight: 500;
 }
 
+#hero .hero-role {
+  font-size: clamp(26px, 3.8vw, 40px);
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 24px;
+}
+
 #hero .cta-two-track {
   margin-top: 10px;
 }
