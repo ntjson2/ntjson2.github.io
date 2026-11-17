@@ -1,17 +1,19 @@
 Nathan Johnson
-Principal Forward Deployed Engineer | Applied AI, MCP & Enterprise Data Integration
+Principal Machine Learning Engineer — LLM, RAG & AI Infrastructure
 
-Missoula, MT | Open to remote and customer-site travel
+LLM/RAG production systems · Evaluation harnesses · Guardrails · Schema normalization · Multi-tenant cloud
+
+Missoula, MT | Open to remote (up to 15% travel)
 ntjson@gmail.com | linkedin.com/in/ntjson | github.com/ntjson2 | ntjson2.github.io
 
 PROFESSIONAL SUMMARY
 
-Principal Software Engineer and former CTO with 20+ years of production experience, focused on Forward Deployed AI Engineering. I embed with domain teams to define schemas and success criteria, then build and ship production LLM pipelines, RAG systems, custom MCP servers, and calibrated ML systems for unstructured data. Experience includes customer discovery, rapid prototyping, evaluation harnesses, guardrails, schema normalization, and multi-tenant AWS/GCP deployments. Open to Principal or Staff Forward Deployed Engineer and Applied AI Architect roles.
+Principal Machine Learning Engineer and former CTO with 20+ years of production experience, specializing in LLMs, retrieval-augmented generation (RAG), and AI infrastructure. I build systems that turn unstructured data — documents, reports, and field records — into clean, structured, trustworthy information that people and AI agents can use. My work emphasizes honest measurement and safety: evaluation harnesses that report real accuracy, guardrails that catch errors, schema normalization, and secure multi-tenant cloud deployments, plus custom MCP servers so AI agents can work directly with your data. Open to Principal or Staff Machine Learning Engineer (LLM/RAG) and Applied AI Engineer roles.
 
 SKILLS
 
 - AI/ML and Data: Python (scikit-learn, pandas), LLM APIs (OpenAI, Anthropic, OpenRouter), RAG, semantic search, AI agents, prompt engineering, data extraction, schema normalization, model evaluation and calibration (spatial CV, OOD validation).
-- Forward Deployed and Delivery: customer discovery, rapid prototyping, solution architecture, production handoff, evaluation harnesses, guardrails, multi-tenant cloud (AWS/GCP), MCP server development.
+- AI Delivery and Production: customer discovery, rapid prototyping, solution architecture, production handoff, evaluation harnesses, guardrails, multi-tenant cloud (AWS/GCP), MCP server development.
 - Languages and Frontend: TypeScript, JavaScript, Python, Rust, C#, Dart, Solidity, PHP, SQL; React, Next.js, React Native, Flutter, Tailwind CSS, Three.js, Unity (C#/DOTS).
 - Backend, Data, and Cloud: Node.js, Express, Django, FastAPI, REST/GraphQL; PostgreSQL, MySQL, MongoDB, DynamoDB, Firestore, Redis; AWS (Lambda, EC2, RDS, S3, API Gateway, ECS), Google Cloud, Firebase, Docker, GitHub Actions, CI/CD.
 - Provenance, Protocols, and Quality: append-only provenance, EAS attestation, IPFS, MCP, x402; Jest, Vitest, Playwright, E2E testing, contract auditing, static analysis, security reviews.
@@ -26,7 +28,7 @@ May 2026 - Present | Missoula, MT
 - Designed evaluation harnesses with confidence intervals and spatial cross-validation; added guardrails (PII redaction, Grade C manual-review flags, Grade D refunds) and documented where the model does and does not generalize.
 - Standardized multi-tenant infrastructure across Node.js, Python, PostgreSQL, AWS, and GCP, with append-only provenance and audit layers plus agent-payable x402 APIs.
 
-Principal Consulting and Forward Deployed Engineer | Self-employed
+Principal Consultant and Applied AI Engineer | Self-employed
 Oct 2018 - Present | Missoula, MT
 
 - Led customer discovery and rapid prototyping for ambiguous client problems, delivering working software in short iterations and handing off to client teams.
@@ -76,10 +78,10 @@ Mineral Prospectivity Model | Honest ML Evaluation
 
 EDUCATION
 
-B.S. Computer Science, Software Engineering | University of Montana | 2026
+B.S. Computer Science, Software Engineering | University of Montana
 Relevant coursework: Advanced Data Structures, Algorithmic Analysis, Machine Learning Systems, Database Architecture.
 
-A.A. Programming and Application Development | Missoula College | 2023
+A.A. Programming and Application Development | Missoula College
 
 CERTIFICATIONS AND TRAINING
 
