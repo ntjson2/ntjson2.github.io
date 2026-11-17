@@ -1,0 +1,5 @@
+# Normalize text files to LF on commit; check out with platform EOL.
+* text=auto
+
+# Third-party vendor assets: never let Git touch their line endings.
+assets/vendor/** -text
